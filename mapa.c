@@ -15,31 +15,50 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     // Alocaca memoria para o mapa e verifica se foi bem sucedido
     tMapa *mapa = (tMapa *) malloc(sizeof(tMapa));
     if (mapa == NULL) {
-        // Mensagem
         exit(1);
     }
 
-    fscanf(file, "%d %d %d\n", &mapa->nMaximoMovimentos);
+    // Obter o numero maximo de movimentos
+    fscanf(file, "%d\n", &mapa->nMaximoMovimentos);
     mapa->nLinhas = 0;
     mapa->nColunas = 0;
 
-    mapa->grid = (char **) malloc(sizeof(char *) * (mapa->nLinhas + 1));
-    *(mapa->grid) = NULL;
-
-    int size = 0;
+    // Obter o numero de linhas e colunas varrendo o arquivo
     char caractere;
-
-    
-    while( (caractere = fgetc(file)) != EOF) {
-
+    int flagTerminoContagem = 0;
+    while ((caractere = fgetc(file)) != EOF) {
         if (caractere == '\n') {
             mapa->nLinhas++;
-            mapa->grid = realloc(mapa->grid, mapa->nLinhas + 1);
-            continue;
+            flagTerminoContagem = 1;
         }
+        else {
+            if (!flagTerminoContagem) {
+                mapa->nColunas++;
+            }
+        } 
+    }
+    mapa->nLinhas++;
 
+    // Retorna o Ponteiro para o Inicio
+    rewind(file);
+
+    // Consome a Primeira Linha do Arquivo
+    fscanf(file, "%*[^\n]\n"); 
+
+    // Alocacao do Grid
+    mapa->grid = (char **) malloc(sizeof(char *) * mapa->nLinhas);
+    if (mapa->grid == NULL) {
+        exit(1);
     }
 
-
+    // Alocacao e Obtencao de Linhas do Mapa
+    for (int i = 0; i < mapa->nLinhas; i++) {
+        mapa->grid[i] = (char *) calloc((mapa->nColunas + 1), sizeof(char));
+        if (mapa->grid[i] == NULL) {
+            exit(1);
+        }
+        fscanf(file,"%[^\n]\n", mapa->grid[i]); // Consome uma linha inteira do mapa
+    }   
+    
     return mapa;
 }
