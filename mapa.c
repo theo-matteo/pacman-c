@@ -22,6 +22,8 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     fscanf(file, "%d\n", &mapa->nMaximoMovimentos);
     mapa->nLinhas = 0;
     mapa->nColunas = 0;
+    mapa->nFrutasAtual = 0;
+    mapa->tunel = NULL;
 
     // Obter o numero de linhas e colunas varrendo o arquivo
     char caractere;
@@ -59,6 +61,119 @@ tMapa* CriaMapa(const char* caminhoConfig) {
         }
         fscanf(file,"%[^\n]\n", mapa->grid[i]); // Consome uma linha inteira do mapa
     }   
+
+    // Verifica se ha tunel no mapa
+    if (PossuiTunelMapa(mapa)) {
+        
+    }
     
     return mapa;
+}
+
+tPosicao* ObtemPosicaoItemMapa(tMapa* mapa, char item) {
+    
+    tPosicao *posicao = NULL;
+
+    for (int i = 0; i < mapa->nLinhas; i++) {
+        for (int j = 0; j < mapa->nColunas; j++) {
+            if (mapa->grid[i][j] == item) {
+                posicao = CriaPosicao(i, j);
+            } 
+        }
+    }
+
+    return posicao;
+}
+
+tTunel* ObtemTunelMapa(tMapa* mapa) {
+    return mapa->tunel;
+}
+
+char ObtemItemMapa(tMapa* mapa, tPosicao* posicao) {
+
+    int linha = ObtemLinhaPosicao(posicao);
+    int coluna = ObtemColunaPosicao(posicao);
+
+    return mapa->grid[linha][coluna];
+}
+
+int ObtemNumeroLinhasMapa(tMapa* mapa) {
+    return mapa->nLinhas;
+}
+
+int ObtemNumeroColunasMapa(tMapa* mapa) {
+    return mapa->nColunas;
+}
+
+int ObtemQuantidadeFrutasIniciaisMapa(tMapa* mapa) {
+    for (int i = 0; i < mapa->nLinhas; i++) {
+        for (int j = 0; j < mapa->nColunas; j++) {
+            if (mapa->grid[i][j] == '*') {
+                mapa->nFrutasAtual++;
+            }
+        }
+    }
+    return mapa->nFrutasAtual;
+}
+
+int ObtemNumeroMaximoMovimentosMapa(tMapa* mapa) {
+    return mapa->nMaximoMovimentos;
+}
+
+bool EncontrouComidaMapa(tMapa* mapa, tPosicao* posicao) {
+
+    int linha = ObtemLinhaPosicao(posicao);
+    int coluna = ObtemColunaPosicao(posicao);
+
+    if (mapa->grid[linha][coluna] == '*') {
+        return true;
+    }
+
+    return false;
+}
+
+bool EncontrouParedeMapa(tMapa* mapa, tPosicao* posicao) {
+
+    int linha = ObtemLinhaPosicao(posicao);
+    int coluna = ObtemColunaPosicao(posicao);
+
+    if (mapa->grid[linha][coluna] == '#') {
+        return true;
+    }
+
+    return false;
+}
+
+bool AtualizaItemMapa(tMapa* mapa, tPosicao* posicao, char item) {
+    return false;
+}
+
+bool PossuiTunelMapa(tMapa* mapa) {
+    
+    tPosicao *posicao = ObtemPosicaoItemMapa(mapa, '@');
+    if (posicao == NULL) {
+        return false;
+    }
+
+    return true;
+}
+
+bool AcessouTunelMapa(tMapa* mapa, tPosicao* posicao) {
+    return false;
+}
+
+void EntraTunelMapa(tMapa* mapa, tPosicao* posicao) {
+
+}
+
+void DesalocaMapa(tMapa* mapa) {
+
+    for (int i = 0; i < mapa->nLinhas; i++) {
+        free(mapa->grid[i]);
+    }
+    free(mapa->grid);
+
+    if (mapa->tunel != NULL) {
+        free(mapa->tunel);
+    }
 }
