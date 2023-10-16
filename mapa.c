@@ -67,6 +67,7 @@ tMapa* CriaMapa(const char* caminhoConfig) {
         
     }
     
+    fclose(file);
     return mapa;
 }
 

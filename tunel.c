@@ -14,10 +14,7 @@ tTunel* CriaTunel(int linhaAcesso1, int colunaAcesso1, int linhaAcesso2, int col
 }
 
 bool EntrouTunel(tTunel* tunel, tPosicao* posicao) {
-    if (SaoIguaisPosicao(tunel->acesso1, posicao)) {
-        return true;
-    }
-    else if (SaoIguaisPosicao(tunel->acesso2, posicao)) {
+    if (SaoIguaisPosicao(tunel->acesso1, posicao) || SaoIguaisPosicao(tunel->acesso2, posicao)) {
         return true;
     }
     return false;
@@ -30,7 +27,7 @@ void LevaFinalTunel(tTunel* tunel, tPosicao* posicao) {
         return;
     }
 
-    posicao = ClonaPosicao(tunel->acesso1);
+    // Atualiza Posicao ou Clona Posicao?
 }
 
 void DesalocaTunel(tTunel* tunel) {
