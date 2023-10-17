@@ -1,0 +1,15 @@
+==7980== Memcheck, a memory error detector
+==7980== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7980== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==7980== Command: Resultados/Theo/tMovimento/prog Resultados/Theo/tMovimento/Casos/10
+==7980== Parent PID: 7979
+==7980== 
+==7980== 
+==7980== HEAP SUMMARY:
+==7980==     in use at exit: 0 bytes in 0 blocks
+==7980==   total heap usage: 116,392 allocs, 116,392 frees, 1,075,220 bytes allocated
+==7980== 
+==7980== All heap blocks were freed -- no leaks are possible
+==7980== 
+==7980== For lists of detected and suppressed errors, rerun with: -s
+==7980== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,6 @@
+cc1: fatal error: Resultados/Theo/tMapa/main.c: No such file or directory
+compilation terminated.
+cc1: fatal error: Resultados/Theo/tMapa/tMapa.c: No such file or directory
+compilation terminated.
+cc1: fatal error: Resultados/Theo/tMapa/tPacman.c: No such file or directory
+compilation terminated.
