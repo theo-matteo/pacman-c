@@ -1,6 +1,0 @@
-cc1: fatal error: Resultados/Theo/tMovimento/main.c: No such file or directory
-compilation terminated.
-cc1: fatal error: Resultados/Theo/tMovimento/tMapa.c: No such file or directory
-compilation terminated.
-cc1: fatal error: Resultados/Theo/tMovimento/tPacman.c: No such file or directory
-compilation terminated.

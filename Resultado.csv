@@ -1,2 +1,2 @@
-Nome,Arquivos,Compilação,Linkagem,Resultado main,Valgrind main,Resultado tMapa,Valgrind tMapa,Resultado tMovimento,Valgrind tMovimento,Resultado tPacman,Valgrind tPacman,Resultado tPosicao,Valgrind tPosicao,Resultado tTunel,Valgrind tTunel,Resultado completo,Valgrind completo,Média
-Theo,7.27,5.00,4.28,0.00,0.00,0.00,0.00,10.00,10.00,0.00,0.00,10.00,10.00,10.00,10.00,0.00,0.00,4.50
+Nome,tPacman (Peso 2.5),tMapa (Peso 2.5),tMovimento (Peso 1.0),tTunel (Peso 1.0),tPosicao (Peso 1.0),completo (Peso 1.0),main (Peso 1.0),Nota Final
+Theo,0,0,1.00,1.00,1.00,0,0,3.00

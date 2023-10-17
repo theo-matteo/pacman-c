@@ -2,12 +2,16 @@
 
 tPacman* CriaPacman(tPosicao* posicao) {
 
+    if (posicao == NULL) {
+        return NULL;
+    }
+
     tPacman *pacman = (tPacman *) malloc(sizeof(tPacman));
     if (pacman == NULL) {
         exit(1);
     }
 
-    pacman->posicaoAtual = NULL;
+    pacman->posicaoAtual = posicao;
     pacman->estaVivo = 1;
 
     /* Inicializa Variaveis de Colisao*/
@@ -65,11 +69,42 @@ tPosicao* ObtemPosicaoPacman(tPacman* pacman) {
     return pacman->posicaoAtual;
 }
 
+tPosicao* ObtemPosicaoPacman(tPacman* pacman) {
+    return pacman->posicaoAtual;
+}
+
 int EstaVivoPacman(tPacman* pacman) {
     return pacman->estaVivo;
 }
 
 void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
+
+    tPosicao *posicaoNova = ClonaPosicao(ObtemPosicaoPacman(pacman));
+
+    if (comando == MOV_ESQUERDA) {
+        
+    }
+    else if (comando == MOV_DIREITA) {
+
+    }
+    else if (comando == MOV_CIMA) {
+        
+    }
+    else {
+
+    }
+
+
+    if (EncontrouParedeMapa(mapa, ObtemPosicaoPacman(pacman))) {
+        return;
+    }
+    else if (AcessouTunelMapa(mapa, ObtemPosicaoPacman(pacman))) {
+        LevaFinalTunel(ObtemTunelMapa(mapa), ObtemPosicaoPacman(pacman));
+        return;
+    }
+
+    
+
 
 }
 

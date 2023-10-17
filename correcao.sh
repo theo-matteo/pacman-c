@@ -2055,3 +2055,4 @@ function script_sem_pesos()
 }
 
 script_com_pesos
+
