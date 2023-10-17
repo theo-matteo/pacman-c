@@ -71,19 +71,6 @@ int EstaVivoPacman(tPacman* pacman) {
 
 void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
 
-    if (comando == MOV_ESQUERDA) {
-
-    }
-    else if (comando == MOV_DIREITA) {
-
-    }
-    else if (comando == MOV_CIMA) {
-
-    }
-    else if (comando == MOV_BAIXO) {
-
-    }
-
 }
 
 void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas) {
@@ -105,13 +92,15 @@ void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas) {
 
 void AtualizaTrilhaPacman(tPacman* pacman) {
     
+    int linha = ObtemLinhaPosicao(pacman->posicaoAtual);
+    int coluna = ObtemColunaPosicao(pacman->posicaoAtual);
+
+    pacman->trilha[linha][coluna] = ObtemNumeroMovimentosSignificativosPacman(pacman);
+
 }
 
 void SalvaTrilhaPacman(tPacman* pacman) {
-
     
-
-
 }
 
 void InsereNovoMovimentoSignificativoPacman(tPacman* pacman, COMANDO comando, const char* acao) {
