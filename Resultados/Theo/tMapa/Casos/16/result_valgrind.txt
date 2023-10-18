@@ -1,0 +1,29 @@
+==116990== Memcheck, a memory error detector
+==116990== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==116990== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==116990== Command: Resultados/Theo/tMapa/prog Resultados/Theo/tMapa/Casos/16
+==116990== Parent PID: 116989
+==116990== 
+==116990== 
+==116990== HEAP SUMMARY:
+==116990==     in use at exit: 672 bytes in 63 blocks
+==116990==   total heap usage: 4,291 allocs, 4,228 frees, 78,497 bytes allocated
+==116990== 
+==116990== 672 (336 direct, 336 indirect) bytes in 21 blocks are definitely lost in loss record 3 of 3
+==116990==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==116990==    by 0x10D040: CriaTunel (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
+==116990==    by 0x10BDCA: ObtemTunelMapa (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
+==116990==    by 0x10C1AC: AcessouTunelMapa (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
+==116990==    by 0x10CA30: MovePacman (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
+==116990==    by 0x10B4F0: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
+==116990==    by 0x10B92F: main (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
+==116990== 
+==116990== LEAK SUMMARY:
+==116990==    definitely lost: 336 bytes in 21 blocks
+==116990==    indirectly lost: 336 bytes in 42 blocks
+==116990==      possibly lost: 0 bytes in 0 blocks
+==116990==    still reachable: 0 bytes in 0 blocks
+==116990==         suppressed: 0 bytes in 0 blocks
+==116990== 
+==116990== For lists of detected and suppressed errors, rerun with: -s
+==116990== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

@@ -1,3 +1,25 @@
 /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
 (.text+0x1b): undefined reference to `main'
+/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `ObtemPosicaoItemMapa':
+tMapa.c:(.text+0x384): undefined reference to `CriaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `ObtemTunelMapa':
+tMapa.c:(.text+0x484): undefined reference to `CriaTunel'
+/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `ObtemItemMapa':
+tMapa.c:(.text+0x4ad): undefined reference to `ObtemLinhaPosicao'
+/usr/bin/ld: tMapa.c:(.text+0x4bc): undefined reference to `ObtemColunaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `EncontrouComidaMapa':
+tMapa.c:(.text+0x60b): undefined reference to `ObtemLinhaPosicao'
+/usr/bin/ld: tMapa.c:(.text+0x61a): undefined reference to `ObtemColunaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `EncontrouParedeMapa':
+tMapa.c:(.text+0x6c8): undefined reference to `ObtemLinhaPosicao'
+/usr/bin/ld: tMapa.c:(.text+0x6d7): undefined reference to `ObtemColunaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `AtualizaItemMapa':
+tMapa.c:(.text+0x78a): undefined reference to `ObtemLinhaPosicao'
+/usr/bin/ld: tMapa.c:(.text+0x799): undefined reference to `ObtemColunaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `AcessouTunelMapa':
+tMapa.c:(.text+0x878): undefined reference to `EntrouTunel'
+/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `EntraTunelMapa':
+tMapa.c:(.text+0x8ac): undefined reference to `LevaFinalTunel'
+/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `DesalocaMapa':
+tMapa.c:(.text+0x93e): undefined reference to `DesalocaTunel'
 collect2: error: ld returned 1 exit status
