@@ -27,6 +27,7 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     char caractere;
     int flagTerminoContagem = 0;
     while ((caractere = fgetc(file)) != EOF) {
+        
         if (caractere == '\n') {
             mapa->nLinhas++;
             flagTerminoContagem = 1;

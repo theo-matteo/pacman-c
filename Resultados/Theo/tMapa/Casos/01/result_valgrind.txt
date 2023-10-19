@@ -1,26 +1,26 @@
-==113969== Memcheck, a memory error detector
-==113969== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==113969== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==113969== Command: Resultados/Theo/tMapa/prog Resultados/Theo/tMapa/Casos/01
-==113969== Parent PID: 113968
-==113969== 
-==113969== Conditional jump or move depends on uninitialised value(s)
-==113969==    at 0x10B351: lerComandoTeclado (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==113969==    by 0x10B419: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==113969==    by 0x10B92F: main (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==113969== 
-==113969== Conditional jump or move depends on uninitialised value(s)
-==113969==    at 0x10B367: lerComandoTeclado (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==113969==    by 0x10B419: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==113969==    by 0x10B92F: main (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==113969== 
-==113969== 
-==113969== HEAP SUMMARY:
-==113969==     in use at exit: 0 bytes in 0 blocks
-==113969==   total heap usage: 36,466 allocs, 36,466 frees, 355,400 bytes allocated
-==113969== 
-==113969== All heap blocks were freed -- no leaks are possible
-==113969== 
-==113969== Use --track-origins=yes to see where uninitialised values come from
-==113969== For lists of detected and suppressed errors, rerun with: -s
-==113969== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==135490== Memcheck, a memory error detector
+==135490== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==135490== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==135490== Command: Resultados/Theo/tMapa/prog Resultados/Theo/tMapa/Casos/01
+==135490== Parent PID: 135489
+==135490== 
+==135490== Conditional jump or move depends on uninitialised value(s)
+==135490==    at 0x10B351: lerComandoTeclado (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==135490==    by 0x10B419: ExecutaJogo (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==135490==    by 0x10B92F: main (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==135490== 
+==135490== Conditional jump or move depends on uninitialised value(s)
+==135490==    at 0x10B367: lerComandoTeclado (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==135490==    by 0x10B419: ExecutaJogo (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==135490==    by 0x10B92F: main (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==135490== 
+==135490== 
+==135490== HEAP SUMMARY:
+==135490==     in use at exit: 0 bytes in 0 blocks
+==135490==   total heap usage: 36,466 allocs, 36,466 frees, 355,400 bytes allocated
+==135490== 
+==135490== All heap blocks were freed -- no leaks are possible
+==135490== 
+==135490== Use --track-origins=yes to see where uninitialised values come from
+==135490== For lists of detected and suppressed errors, rerun with: -s
+==135490== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

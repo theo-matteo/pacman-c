@@ -1,38 +1,38 @@
-==118095== Memcheck, a memory error detector
-==118095== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==118095== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==118095== Command: Resultados/Theo/tMapa/prog Resultados/Theo/tMapa/Casos/20
-==118095== Parent PID: 118094
-==118095== 
-==118095== 
-==118095== HEAP SUMMARY:
-==118095==     in use at exit: 2,400 bytes in 225 blocks
-==118095==   total heap usage: 25,898 allocs, 25,673 frees, 261,676 bytes allocated
-==118095== 
-==118095== 32 (16 direct, 16 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 6
-==118095==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==118095==    by 0x10D040: CriaTunel (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10BDCA: ObtemTunelMapa (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10C1E0: EntraTunelMapa (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10CA53: MovePacman (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10B4F0: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10B92F: main (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095== 
-==118095== 2,368 (1,184 direct, 1,184 indirect) bytes in 74 blocks are definitely lost in loss record 6 of 6
-==118095==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==118095==    by 0x10D040: CriaTunel (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10BDCA: ObtemTunelMapa (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10C1AC: AcessouTunelMapa (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10CA30: MovePacman (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10B4F0: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095==    by 0x10B92F: main (in /home/theo/Pacman/Resultados/Theo/tMapa/prog)
-==118095== 
-==118095== LEAK SUMMARY:
-==118095==    definitely lost: 1,200 bytes in 75 blocks
-==118095==    indirectly lost: 1,200 bytes in 150 blocks
-==118095==      possibly lost: 0 bytes in 0 blocks
-==118095==    still reachable: 0 bytes in 0 blocks
-==118095==         suppressed: 0 bytes in 0 blocks
-==118095== 
-==118095== For lists of detected and suppressed errors, rerun with: -s
-==118095== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==139712== Memcheck, a memory error detector
+==139712== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==139712== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==139712== Command: Resultados/Theo/tMapa/prog Resultados/Theo/tMapa/Casos/20
+==139712== Parent PID: 139711
+==139712== 
+==139712== 
+==139712== HEAP SUMMARY:
+==139712==     in use at exit: 2,400 bytes in 225 blocks
+==139712==   total heap usage: 25,898 allocs, 25,673 frees, 261,676 bytes allocated
+==139712== 
+==139712== 32 (16 direct, 16 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 6
+==139712==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==139712==    by 0x10D040: CriaTunel (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10BDCA: ObtemTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10C1E0: EntraTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10CA53: MovePacman (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10B4F0: ExecutaJogo (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10B92F: main (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712== 
+==139712== 2,368 (1,184 direct, 1,184 indirect) bytes in 74 blocks are definitely lost in loss record 6 of 6
+==139712==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==139712==    by 0x10D040: CriaTunel (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10BDCA: ObtemTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10C1AC: AcessouTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10CA30: MovePacman (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10B4F0: ExecutaJogo (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712==    by 0x10B92F: main (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
+==139712== 
+==139712== LEAK SUMMARY:
+==139712==    definitely lost: 1,200 bytes in 75 blocks
+==139712==    indirectly lost: 1,200 bytes in 150 blocks
+==139712==      possibly lost: 0 bytes in 0 blocks
+==139712==    still reachable: 0 bytes in 0 blocks
+==139712==         suppressed: 0 bytes in 0 blocks
+==139712== 
+==139712== For lists of detected and suppressed errors, rerun with: -s
+==139712== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

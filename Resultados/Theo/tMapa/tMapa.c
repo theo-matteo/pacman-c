@@ -241,7 +241,7 @@ void DesalocaMapa(tMapa* mapa) {
         return;
     }
 
-    // 
+    // Desaloca Grid
     if (mapa->grid != NULL) {
         for (int i = 0; i < mapa->nLinhas; i++) {
             free(mapa->grid[i]);
