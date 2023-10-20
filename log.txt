@@ -513,7 +513,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Incorreto!
  - Pasta tMapa / Caso 16:
  - Arquivo de output gerado: Resultados/Theo/tMapa/Casos/16/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 4,291, frees: 4,228, errors: 1 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 4,228, frees: 4,228, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.2
  - Resultado para o ranking.txt: Incorreto!
@@ -522,7 +522,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Incorreto!
  - Pasta tMapa / Caso 17:
  - Arquivo de output gerado: Resultados/Theo/tMapa/Casos/17/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 6,211, frees: 6,121, errors: 2 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 6,121, frees: 6,121, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 2.0
  - Resultado para o inicializacao.txt: Ok! Peso: 1.2
  - Resultado para o ranking.txt: Ok! Peso: 2.0
@@ -531,7 +531,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Incorreto!
  - Pasta tMapa / Caso 18:
  - Arquivo de output gerado: Resultados/Theo/tMapa/Casos/18/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 10,528, frees: 10,357, errors: 2 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 10,357, frees: 10,357, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.2
  - Resultado para o ranking.txt: Incorreto!
@@ -540,7 +540,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Incorreto!
  - Pasta tMapa / Caso 19:
  - Arquivo de output gerado: Resultados/Theo/tMapa/Casos/19/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 38,909, frees: 38,681, errors: 2 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 38,681, frees: 38,681, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.2
  - Resultado para o ranking.txt: Incorreto!
@@ -549,7 +549,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Incorreto!
  - Pasta tMapa / Caso 20:
  - Arquivo de output gerado: Resultados/Theo/tMapa/Casos/20/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 25,898, frees: 25,673, errors: 2 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 25,673, frees: 25,673, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.2
  - Resultado para o ranking.txt: Incorreto!
@@ -558,7 +558,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Incorreto!
  - Pasta tMapa / Caso 21:
  - Arquivo de output gerado: Resultados/Theo/tMapa/Casos/21/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 5,971, frees: 5,890, errors: 2 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 5,890, frees: 5,890, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.2
  - Resultado para o ranking.txt: Incorreto!
@@ -1857,7 +1857,7 @@ Nome 0: Theo
  - Resumo das Compilações: 3 compilações corretas de 7 no total
  - Resumo das Linkagens: 1 linkagens corretas de 7 no total
  - Valgrinds Corretos tPacman: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta tPacman, olhar detalhamento nos prints acima!)
- - Valgrinds Corretos tMapa: 22 valgrinds corretos de 30 (teve desconto na nota para a pasta tMapa, olhar detalhamento nos prints acima!)
+ - Valgrinds Corretos tMapa: 28 valgrinds corretos de 30 (teve desconto na nota para a pasta tMapa, olhar detalhamento nos prints acima!)
  - Valgrinds Corretos tMovimento: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta tMovimento, olhar detalhamento nos prints acima!)
  - Valgrinds Corretos tTunel: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta tTunel, olhar detalhamento nos prints acima!)
  - Valgrinds Corretos tPosicao: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta tPosicao, olhar detalhamento nos prints acima!)
@@ -1865,13 +1865,13 @@ Nome 0: Theo
  - Valgrinds Corretos main: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta main, olhar detalhamento nos prints acima!)
  - Cômputo final das Notas:
  - Pasta tPacman (peso 2.5): 0 resultados corretos de 180 / Nota 0
- - Pasta tMapa (peso 2.5): 103 resultados corretos de 180 / Nota 1.30
+ - Pasta tMapa (peso 2.5): 103 resultados corretos de 180 / Nota 1.33
  - Pasta tMovimento (peso 1.0): 0 resultados corretos de 180 / Nota 0
  - Pasta tTunel (peso 1.0): 0 resultados corretos de 180 / Nota 0
  - Pasta tPosicao (peso 1.0): 0 resultados corretos de 180 / Nota 0
  - Pasta completo (peso 1.0): 0 resultados corretos de 180 / Nota 0
  - Pasta main (peso 1.0): 0 resultados corretos de 180 / Nota 0
- - Nota Final Theo: 1.30
+ - Nota Final Theo: 1.33
 
 ----------------------------------------------------------------------------
 

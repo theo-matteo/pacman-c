@@ -1,38 +1,15 @@
-==138867== Memcheck, a memory error detector
-==138867== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==138867== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==138867== Command: Resultados/Theo/tMapa/prog Resultados/Theo/tMapa/Casos/17
-==138867== Parent PID: 138866
-==138867== 
-==138867== 
-==138867== HEAP SUMMARY:
-==138867==     in use at exit: 960 bytes in 90 blocks
-==138867==   total heap usage: 6,211 allocs, 6,121 frees, 95,153 bytes allocated
-==138867== 
-==138867== 32 (16 direct, 16 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 6
-==138867==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==138867==    by 0x10D040: CriaTunel (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10BDCA: ObtemTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10C1E0: EntraTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10CA53: MovePacman (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10B4F0: ExecutaJogo (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10B92F: main (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867== 
-==138867== 928 (464 direct, 464 indirect) bytes in 29 blocks are definitely lost in loss record 6 of 6
-==138867==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==138867==    by 0x10D040: CriaTunel (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10BDCA: ObtemTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10C1AC: AcessouTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10CA30: MovePacman (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10B4F0: ExecutaJogo (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867==    by 0x10B92F: main (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138867== 
-==138867== LEAK SUMMARY:
-==138867==    definitely lost: 480 bytes in 30 blocks
-==138867==    indirectly lost: 480 bytes in 60 blocks
-==138867==      possibly lost: 0 bytes in 0 blocks
-==138867==    still reachable: 0 bytes in 0 blocks
-==138867==         suppressed: 0 bytes in 0 blocks
-==138867== 
-==138867== For lists of detected and suppressed errors, rerun with: -s
-==138867== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==29186== Memcheck, a memory error detector
+==29186== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29186== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==29186== Command: Resultados/Theo/tMapa/prog Resultados/Theo/tMapa/Casos/17
+==29186== Parent PID: 29185
+==29186== 
+==29186== 
+==29186== HEAP SUMMARY:
+==29186==     in use at exit: 0 bytes in 0 blocks
+==29186==   total heap usage: 6,121 allocs, 6,121 frees, 94,193 bytes allocated
+==29186== 
+==29186== All heap blocks were freed -- no leaks are possible
+==29186== 
+==29186== For lists of detected and suppressed errors, rerun with: -s
+==29186== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

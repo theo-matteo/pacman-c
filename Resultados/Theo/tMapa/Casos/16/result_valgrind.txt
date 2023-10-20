@@ -1,29 +1,15 @@
-==138613== Memcheck, a memory error detector
-==138613== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==138613== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==138613== Command: Resultados/Theo/tMapa/prog Resultados/Theo/tMapa/Casos/16
-==138613== Parent PID: 138612
-==138613== 
-==138613== 
-==138613== HEAP SUMMARY:
-==138613==     in use at exit: 672 bytes in 63 blocks
-==138613==   total heap usage: 4,291 allocs, 4,228 frees, 78,497 bytes allocated
-==138613== 
-==138613== 672 (336 direct, 336 indirect) bytes in 21 blocks are definitely lost in loss record 3 of 3
-==138613==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==138613==    by 0x10D040: CriaTunel (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138613==    by 0x10BDCA: ObtemTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138613==    by 0x10C1AC: AcessouTunelMapa (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138613==    by 0x10CA30: MovePacman (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138613==    by 0x10B4F0: ExecutaJogo (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138613==    by 0x10B92F: main (in /home/arfsa/pacman/Resultados/Theo/tMapa/prog)
-==138613== 
-==138613== LEAK SUMMARY:
-==138613==    definitely lost: 336 bytes in 21 blocks
-==138613==    indirectly lost: 336 bytes in 42 blocks
-==138613==      possibly lost: 0 bytes in 0 blocks
-==138613==    still reachable: 0 bytes in 0 blocks
-==138613==         suppressed: 0 bytes in 0 blocks
-==138613== 
-==138613== For lists of detected and suppressed errors, rerun with: -s
-==138613== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==28998== Memcheck, a memory error detector
+==28998== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28998== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==28998== Command: Resultados/Theo/tMapa/prog Resultados/Theo/tMapa/Casos/16
+==28998== Parent PID: 28997
+==28998== 
+==28998== 
+==28998== HEAP SUMMARY:
+==28998==     in use at exit: 0 bytes in 0 blocks
+==28998==   total heap usage: 4,228 allocs, 4,228 frees, 77,825 bytes allocated
+==28998== 
+==28998== All heap blocks were freed -- no leaks are possible
+==28998== 
+==28998== For lists of detected and suppressed errors, rerun with: -s
+==28998== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

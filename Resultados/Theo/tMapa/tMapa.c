@@ -27,6 +27,7 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     char caractere;
     int flagTerminoContagem = 0;
     while ((caractere = fgetc(file)) != EOF) {
+        
         if (caractere == '\n') {
             mapa->nLinhas++;
             flagTerminoContagem = 1;
@@ -63,6 +64,7 @@ tMapa* CriaMapa(const char* caminhoConfig) {
 
 
     mapa->nFrutasAtual = ObtemQuantidadeFrutasIniciaisMapa(mapa);
+    printf("NUMERO DE COMIDAS ATUAL: %d\n", mapa->nFrutasAtual);
     mapa->tunel = ObtemTunelMapa(mapa);
 
     fclose(file);
@@ -227,11 +229,11 @@ bool PossuiTunelMapa(tMapa* mapa) {
 }
 
 bool AcessouTunelMapa(tMapa* mapa, tPosicao* posicao) {
-    return EntrouTunel(ObtemTunelMapa(mapa), posicao);
+    return EntrouTunel(mapa->tunel, posicao);
 }
 
 void EntraTunelMapa(tMapa* mapa, tPosicao* posicao) {
-    LevaFinalTunel(ObtemTunelMapa(mapa), posicao);
+    LevaFinalTunel(mapa->tunel, posicao);
 }
 
 void DesalocaMapa(tMapa* mapa) {
