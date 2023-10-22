@@ -12,17 +12,12 @@ int main (int argc, char *argv[]) {
         exit(1);
     }
 
-    tMapa *mapa = CriaMapa(argv[1]);
+    tPosicao posicao;
+    posicao.linha = 2;
+    posicao.coluna = 3;
 
-    printf("%d %d\n", mapa->nColunas, mapa->nLinhas);
-
-    for (int i = 0; i < mapa->nLinhas; i++) {
-        for (int j = 0; j < mapa->nColunas; j++) {
-            printf("%c", mapa->grid[i][j]);
-        }
-        printf("\n");
-    }
-
-    DesalocaMapa(mapa);
+    tPacman *pacman = CriaPacman(&posicao);
+    
+    
     return 0;
 }

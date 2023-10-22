@@ -1,7 +1,0 @@
-Numero de movimentos: 27
-Numero de movimentos sem pontuar: 21
-Numero de colisoes com parede: 1
-Numero de movimentos para baixo: 9
-Numero de movimentos para cima: 6
-Numero de movimentos para esquerda: 2
-Numero de movimentos para direita: 10

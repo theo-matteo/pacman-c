@@ -1,0 +1,9 @@
+Estado do jogo apos o movimento 'd':
+#########
+#       #
+# B     #
+#     >*#
+Pontuacao: 1
+
+Voce venceu!
+Pontuacao final: 1

@@ -39,7 +39,7 @@ tMapa* CriaMapa(const char* caminhoConfig) {
         } 
     }
 
-    mapa->nLinhas++;
+    // mapa->nLinhas++
 
     // Retorna o Ponteiro para o Inicio
     rewind(file);
@@ -64,7 +64,6 @@ tMapa* CriaMapa(const char* caminhoConfig) {
 
 
     mapa->nFrutasAtual = ObtemQuantidadeFrutasIniciaisMapa(mapa);
-    printf("NUMERO DE COMIDAS ATUAL: %d\n", mapa->nFrutasAtual);
     mapa->tunel = ObtemTunelMapa(mapa);
 
     fclose(file);
