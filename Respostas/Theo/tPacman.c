@@ -46,6 +46,7 @@ tPacman* CriaPacman(tPosicao* posicao) {
 
 tPacman* ClonaPacman(tPacman* pacman) {
     tPacman *pacmanClonado = CriaPacman(ObtemPosicaoPacman(pacman));
+    *(pacmanClonado) = *(pacman);
     return pacmanClonado;
 }
 
@@ -94,12 +95,12 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
         if (EncontrouParedeMapa(mapa, posicaoNova)) {
             pacman->nColisoesParedeEsquerda++;
         }
-        else if (EncontrouComidaMapa(mapa, posicaoNova)) {
-            pacman->nFrutasComidasEsquerda++;
-            AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
-        }
         else {
             AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
+
+            if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman))) {
+                pacman->nFrutasComidasEsquerda++;
+            }
         }
 
     }
@@ -111,16 +112,15 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
         if (EncontrouParedeMapa(mapa, posicaoNova)) {
             pacman->nColisoesParedeDireita++;
         }
-        else if (EncontrouComidaMapa(mapa, posicaoNova)) {
-            pacman->nFrutasComidasDireita++;
-            AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
-        }
         else {
             AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
+
+            if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman))) {
+                pacman->nFrutasComidasDireita++;
+            }
         }
-
-
     }
+    
     else if (comando == MOV_CIMA) {
 
         posicaoNova = CriaPosicao(linha - 1, coluna);
@@ -129,12 +129,12 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
         if (EncontrouParedeMapa(mapa, posicaoNova)) {
             pacman->nColisoesParedeCima++;
         }
-        else if (EncontrouComidaMapa(mapa, posicaoNova)) {
-            pacman->nFrutasComidasCima++;
-            AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
-        }
         else {
             AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
+
+            if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman))) {
+                pacman->nFrutasComidasCima++;
+            }
         }
     }
 
@@ -146,12 +146,14 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
         if (EncontrouParedeMapa(mapa, posicaoNova)) {
             pacman->nColisoesParedeBaixo++;
         }
-        else if (EncontrouComidaMapa(mapa, posicaoNova)) {
-            pacman->nFrutasComidasBaixo++;
-            AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
-        }
         else {
+
             AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
+
+            if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman))) {
+                pacman->nFrutasComidasBaixo++;
+            }
+            
         }
     }
 

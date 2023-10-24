@@ -1,492 +1,282 @@
-==98619== Memcheck, a memory error detector
-==98619== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==98619== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==98619== Command: Resultados/Theo/tPacman/prog Resultados/Theo/tPacman/Casos/01
-==98619== Parent PID: 98618
-==98619== 
-==98619== Invalid read of size 4
-==98619==    at 0x10CFC7: ObtemLinhaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10ABDC: PrintaGridMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B5FC: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid read of size 4
-==98619==    at 0x10CFDB: ObtemColunaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10ABF1: PrintaGridMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B5FC: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid read of size 4
-==98619==    at 0x10CFC7: ObtemLinhaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C55A: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid read of size 4
-==98619==    at 0x10CFDB: ObtemColunaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C571: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10CFFA: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C716: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10D007: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C716: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid read of size 4
-==98619==    at 0x10CFC7: ObtemLinhaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10AE10: VerificaColisaoComFantasma (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B487: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid read of size 4
-==98619==    at 0x10CFDB: ObtemColunaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10AE1F: VerificaColisaoComFantasma (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B487: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid read of size 4
-==98619==    at 0x10CFC7: ObtemLinhaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10AEA9: VerificaColisaoComFantasma (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B487: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid read of size 4
-==98619==    at 0x10CFDB: ObtemColunaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10AEB8: VerificaColisaoComFantasma (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B487: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid free() / delete / delete[] / realloc()
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10CFFA: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C6F3: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10D007: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C6F3: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10CFFA: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C7E2: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10D007: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C7E2: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10CFFA: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C7BF: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10D007: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C7BF: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10CFFA: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C64A: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10D007: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C64A: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10CFFA: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C627: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10D007: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C627: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10CFFA: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C87E: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10D007: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C87E: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10CFFA: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C89E: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid write of size 4
-==98619==    at 0x10D007: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10C89E: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
-==98619==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10D06F: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10CCBA: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Block was alloc'd at
-==98619==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==98619==    by 0x10CF5B: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619== 
-==98619== Invalid read of size 8
-==98619==    at 0x10C46A: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B0FD: GeraArquivos (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B78E: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==98619== 
-==98619== 
-==98619== Process terminating with default action of signal 11 (SIGSEGV)
-==98619==  Access not within mapped region at address 0x0
-==98619==    at 0x10C46A: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B0FD: GeraArquivos (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B78E: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
-==98619==  If you believe this happened as a result of a stack
-==98619==  overflow in your program's main thread (unlikely but
-==98619==  possible), you can try to increase the size of the
-==98619==  main thread stack using the --main-stacksize= flag.
-==98619==  The main thread stack size used in this run was 8388608.
-==98619== 
-==98619== HEAP SUMMARY:
-==98619==     in use at exit: 15,680 bytes in 62 blocks
-==98619==   total heap usage: 27,801 allocs, 27,823 frees, 259,344 bytes allocated
-==98619== 
-==98619== LEAK SUMMARY:
-==98619==    definitely lost: 0 bytes in 0 blocks
-==98619==    indirectly lost: 0 bytes in 0 blocks
-==98619==      possibly lost: 0 bytes in 0 blocks
-==98619==    still reachable: 15,680 bytes in 62 blocks
-==98619==         suppressed: 0 bytes in 0 blocks
-==98619== Reachable blocks (those to which a pointer was found) are not shown.
-==98619== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==98619== 
-==98619== For lists of detected and suppressed errors, rerun with: -s
-==98619== ERROR SUMMARY: 52765 errors from 26 contexts (suppressed: 0 from 0)
+==113161== Memcheck, a memory error detector
+==113161== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==113161== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==113161== Command: Resultados/Theo/tPacman/prog Resultados/Theo/tPacman/Casos/01
+==113161== Parent PID: 113160
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFD2: ObtemLinhaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10ABDC: PrintaGridMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B5FC: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFE6: ObtemColunaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10ABF1: PrintaGridMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B5FC: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFD2: ObtemLinhaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10C5BD: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFE6: ObtemColunaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10C5D4: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid write of size 4
+==113161==    at 0x10D005: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10C713: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid write of size 4
+==113161==    at 0x10D012: AtualizaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10C713: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFD2: ObtemLinhaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BE0B: EncontrouComidaMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10C731: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFE6: ObtemColunaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BE1A: EncontrouComidaMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10C731: MovePacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B470: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFD2: ObtemLinhaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10AE10: VerificaColisaoComFantasma (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B487: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFE6: ObtemColunaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10AE1F: VerificaColisaoComFantasma (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B487: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFD2: ObtemLinhaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10AEA9: VerificaColisaoComFantasma (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B487: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 4
+==113161==    at 0x10CFE6: ObtemColunaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10AEB8: VerificaColisaoComFantasma (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B487: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a4 is 4 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid free() / delete / delete[] / realloc()
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x4aad4a0 is 0 bytes inside a block of size 8 free'd
+==113161==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10D07A: DesalocaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10CCC5: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Block was alloc'd at
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10CF66: CriaPosicao (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10BF09: ObtemPosicaoItemMapa (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A79A: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== Invalid read of size 8
+==113161==    at 0x10CCE3: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==113161== 
+==113161== 
+==113161== Process terminating with default action of signal 11 (SIGSEGV)
+==113161==  Access not within mapped region at address 0x0
+==113161==    at 0x10CCE3: DesalocaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B496: ExecutaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B8AF: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==  If you believe this happened as a result of a stack
+==113161==  overflow in your program's main thread (unlikely but
+==113161==  possible), you can try to increase the size of the
+==113161==  main thread stack using the --main-stacksize= flag.
+==113161==  The main thread stack size used in this run was 8388608.
+==113161== 
+==113161== HEAP SUMMARY:
+==113161==     in use at exit: 15,056 bytes in 70 blocks
+==113161==   total heap usage: 1,023 allocs, 954 frees, 33,160 bytes allocated
+==113161== 
+==113161== 1,200 bytes in 20 blocks are definitely lost in loss record 23 of 26
+==113161==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==113161==    by 0x10C988: CriaTrilhaPacman (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10A7FF: CriaJogo (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161==    by 0x10B89F: main (in /home/arfsa/Pacman/Resultados/Theo/tPacman/prog)
+==113161== 
+==113161== LEAK SUMMARY:
+==113161==    definitely lost: 1,200 bytes in 20 blocks
+==113161==    indirectly lost: 0 bytes in 0 blocks
+==113161==      possibly lost: 0 bytes in 0 blocks
+==113161==    still reachable: 13,856 bytes in 50 blocks
+==113161==         suppressed: 0 bytes in 0 blocks
+==113161== Reachable blocks (those to which a pointer was found) are not shown.
+==113161== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==113161== 
+==113161== For lists of detected and suppressed errors, rerun with: -s
+==113161== ERROR SUMMARY: 625 errors from 15 contexts (suppressed: 0 from 0)
