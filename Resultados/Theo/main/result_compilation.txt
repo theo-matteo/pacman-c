@@ -1,0 +1,4 @@
+tPacman.c: In function ‘MovePacman’:
+tPacman.c:87:9: warning: unused variable ‘atualizouPosicao’ [-Wunused-variable]
+   87 |     int atualizouPosicao = 0;
+      |         ^~~~~~~~~~~~~~~~

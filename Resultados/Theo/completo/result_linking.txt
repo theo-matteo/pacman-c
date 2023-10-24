@@ -1,25 +1,43 @@
 /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
 (.text+0x1b): undefined reference to `main'
-/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `CriaMapa':
-tMapa.c:(.text+0x440): undefined reference to `CriaTunel'
-/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `ObtemPosicaoItemMapa':
-tMapa.c:(.text+0x4d8): undefined reference to `CriaPosicao'
-/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `ObtemItemMapa':
-tMapa.c:(.text+0x53e): undefined reference to `ObtemLinhaPosicao'
-/usr/bin/ld: tMapa.c:(.text+0x54d): undefined reference to `ObtemColunaPosicao'
-/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `EncontrouComidaMapa':
-tMapa.c:(.text+0x63e): undefined reference to `ObtemLinhaPosicao'
-/usr/bin/ld: tMapa.c:(.text+0x64d): undefined reference to `ObtemColunaPosicao'
-/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `EncontrouParedeMapa':
-tMapa.c:(.text+0x70c): undefined reference to `ObtemLinhaPosicao'
-/usr/bin/ld: tMapa.c:(.text+0x71b): undefined reference to `ObtemColunaPosicao'
-/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `AtualizaItemMapa':
-tMapa.c:(.text+0x7ce): undefined reference to `ObtemLinhaPosicao'
-/usr/bin/ld: tMapa.c:(.text+0x7dd): undefined reference to `ObtemColunaPosicao'
-/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `AcessouTunelMapa':
-tMapa.c:(.text+0x8bc): undefined reference to `EntrouTunel'
-/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `EntraTunelMapa':
-tMapa.c:(.text+0x8f0): undefined reference to `LevaFinalTunel'
-/usr/bin/ld: Resultados/Theo/completo/tMapa.o: in function `DesalocaMapa':
-tMapa.c:(.text+0x986): undefined reference to `DesalocaTunel'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `ClonaHistoricoDeMovimentosSignificativosPacman':
+tPacman.c:(.text+0x1a9): undefined reference to `ObtemNumeroMovimento'
+/usr/bin/ld: tPacman.c:(.text+0x1cb): undefined reference to `ObtemComandoMovimento'
+/usr/bin/ld: tPacman.c:(.text+0x1ed): undefined reference to `ObtemAcaoMovimento'
+/usr/bin/ld: tPacman.c:(.text+0x219): undefined reference to `CriaMovimento'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `MovePacman':
+tPacman.c:(.text+0x28f): undefined reference to `ObtemLinhaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x2a6): undefined reference to `ObtemColunaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x2d4): undefined reference to `CriaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x2fc): undefined reference to `EncontrouParedeMapa'
+/usr/bin/ld: tPacman.c:(.text+0x329): undefined reference to `EncontrouComidaMapa'
+/usr/bin/ld: tPacman.c:(.text+0x35c): undefined reference to `AtualizaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x37f): undefined reference to `AtualizaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x3a0): undefined reference to `CriaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x3c8): undefined reference to `EncontrouParedeMapa'
+/usr/bin/ld: tPacman.c:(.text+0x3f5): undefined reference to `EncontrouComidaMapa'
+/usr/bin/ld: tPacman.c:(.text+0x428): undefined reference to `AtualizaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x44b): undefined reference to `AtualizaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x46c): undefined reference to `CriaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x494): undefined reference to `EncontrouParedeMapa'
+/usr/bin/ld: tPacman.c:(.text+0x4c1): undefined reference to `EncontrouComidaMapa'
+/usr/bin/ld: tPacman.c:(.text+0x4f4): undefined reference to `AtualizaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x517): undefined reference to `AtualizaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x52e): undefined reference to `CriaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x556): undefined reference to `EncontrouParedeMapa'
+/usr/bin/ld: tPacman.c:(.text+0x580): undefined reference to `EncontrouComidaMapa'
+/usr/bin/ld: tPacman.c:(.text+0x5b3): undefined reference to `AtualizaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x5d3): undefined reference to `AtualizaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x5df): undefined reference to `PossuiTunelMapa'
+/usr/bin/ld: tPacman.c:(.text+0x5f6): undefined reference to `AcessouTunelMapa'
+/usr/bin/ld: tPacman.c:(.text+0x618): undefined reference to `EntraTunelMapa'
+/usr/bin/ld: tPacman.c:(.text+0x635): undefined reference to `DesalocaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `AtualizaTrilhaPacman':
+tPacman.c:(.text+0x762): undefined reference to `ObtemLinhaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x774): undefined reference to `ObtemColunaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `InsereNovoMovimentoSignificativoPacman':
+tPacman.c:(.text+0x924): undefined reference to `CriaMovimento'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `DesalocaPacman':
+tPacman.c:(.text+0x9ef): undefined reference to `DesalocaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0xa17): undefined reference to `DesalocaMovimento'
 collect2: error: ld returned 1 exit status

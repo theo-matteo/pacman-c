@@ -154,5 +154,53 @@ Estado do jogo apos o movimento 'a':
 #########
 Pontuacao: 2
 
-Voce venceu!
-Pontuacao final: 2
+Estado do jogo apos o movimento 'd':
+#########
+#   *   #
+# ### * #
+#     I>#
+# #   # #
+# ## ## #
+#  #  # #
+#     C #
+#########
+Pontuacao: 2
+
+Estado do jogo apos o movimento 'w':
+#########
+#   *   #
+# ### I>#
+#       #
+# #   # #
+# ## ## #
+#  #  # #
+#    C  #
+#########
+Pontuacao: 2
+
+Estado do jogo apos o movimento 'd':
+#########
+#   * I #
+# ### *>#
+#       #
+# #   # #
+# ## ## #
+#  #  # #
+#   C   #
+#########
+Pontuacao: 2
+
+Estado do jogo apos o movimento 'a':
+#########
+#   *   #
+# ### I #
+#       #
+# #   # #
+# ## ## #
+#  #  # #
+#  C    #
+#########
+Pontuacao: 3
+
+Game over!
+Pontuacao final: 3
