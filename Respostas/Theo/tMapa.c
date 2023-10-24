@@ -20,12 +20,18 @@ tMapa* CriaMapa(const char* caminhoConfig) {
 
     // Obter o numero maximo de movimentos
     fscanf(file, "%d\n", &mapa->nMaximoMovimentos);
+
+    // Inicializacao Variaveis do Mapa
     mapa->nLinhas = 0;
     mapa->nColunas = 0;
+    mapa->nFrutasAtual = 0;
+    mapa->tunel = NULL;
 
-    // Obter o numero de linhas e colunas varrendo o arquivo
+   
+    /* Realiza Contagem de Linhas e Colunas */
     char caractere;
     int flagTerminoContagem = 0;
+
     while ((caractere = fgetc(file)) != EOF) {
         
         if (caractere == '\n') {
@@ -39,8 +45,6 @@ tMapa* CriaMapa(const char* caminhoConfig) {
         } 
     }
 
-    // mapa->nLinhas++
-
     // Retorna o Ponteiro para o Inicio
     rewind(file);
 
@@ -53,18 +57,45 @@ tMapa* CriaMapa(const char* caminhoConfig) {
         exit(1);
     }
 
-    // Alocacao e Obtencao de Linhas do Mapa
+    // Aloca as informacoes do mapa.txt no grid
     for (int i = 0; i < mapa->nLinhas; i++) {
         mapa->grid[i] = (char *) calloc((mapa->nColunas + 1), sizeof(char));
         if (mapa->grid[i] == NULL) {
             exit(1);
         }
-        fscanf(file,"%[^\n]\n", mapa->grid[i]); // Consome uma linha inteira do mapa
+        fscanf(file,"%[^\n]\n", mapa->grid[i]); 
     }   
 
+    /* Varre o Mapa contando comidas e Procurando Tunel */
+    int linha1 = -1, linha2 = -1;
+    int coluna1 = -1, coluna2 = -1;
+    int found = 0;
 
-    mapa->nFrutasAtual = ObtemQuantidadeFrutasIniciaisMapa(mapa);
-    mapa->tunel = ObtemTunelMapa(mapa);
+    for (int i = 0; i < mapa->nLinhas; i++) {
+        for (int j = 0; j < mapa->nColunas; j++) {
+
+            if (mapa->grid[i][j] == '*') {
+                mapa->nFrutasAtual++;
+            }
+
+            if (mapa->grid[i][j] == '@') {
+                if (linha1 == -1 && coluna1 == -1) {
+                    linha1 = i;
+                    coluna1 = j;
+                }
+                else {
+                    linha2 = i;
+                    coluna2 = j;
+                    found = 1;
+                }
+            } 
+        }
+    }
+
+    if (found == 1) {
+        mapa->tunel = CriaTunel(linha1, coluna1, linha2, coluna2);
+    }
+
 
     fclose(file);
     return mapa;
@@ -85,32 +116,7 @@ tPosicao* ObtemPosicaoItemMapa(tMapa* mapa, char item) {
 }
 
 tTunel* ObtemTunelMapa(tMapa* mapa) {
-
-    int found = 0;
-    int linha1 = -1, linha2 = -1;
-    int coluna1 = -1, coluna2 = -1;
-    
-    for (int i = 0; i < mapa->nLinhas; i++) {
-        for (int j = 0; j < mapa->nColunas; j++) {
-            if (mapa->grid[i][j] == '@') {
-                if (linha1 == -1 && coluna1 == -1) {
-                    linha1 = i;
-                    coluna1 = j;
-                }
-                else {
-                    linha2 = i;
-                    coluna2 = j;
-                    found = 1;
-                }
-            } 
-        }
-    }
-
-    if (found) {
-        return CriaTunel(linha1, coluna1, linha2, coluna2);
-    }
-
-    return NULL;
+    return mapa->tunel;
 }   
 
 char ObtemItemMapa(tMapa* mapa, tPosicao* posicao) {
@@ -140,17 +146,7 @@ int ObtemNumeroColunasMapa(tMapa* mapa) {
 }
 
 int ObtemQuantidadeFrutasIniciaisMapa(tMapa* mapa) {
-
-    int count = 0;
-
-    for (int i = 0; i < mapa->nLinhas; i++) {
-        for (int j = 0; j < mapa->nColunas; j++) {
-            if (mapa->grid[i][j] == '*') {
-                count++;
-            }
-        }
-    }
-    return count;
+    return mapa->nFrutasAtual;
 }
 
 int ObtemNumeroMaximoMovimentosMapa(tMapa* mapa) {
@@ -175,6 +171,7 @@ bool EncontrouComidaMapa(tMapa* mapa, tPosicao* posicao) {
         return false;
     }
 
+    mapa->nFrutasAtual--;
     return true;
 }
 
@@ -220,7 +217,7 @@ bool AtualizaItemMapa(tMapa* mapa, tPosicao* posicao, char item) {
 
 bool PossuiTunelMapa(tMapa* mapa) {
     
-    if (mapa->tunel == NULL) {
+    if (ObtemTunelMapa(mapa) == NULL) {
         return false;
     }
 
@@ -228,11 +225,11 @@ bool PossuiTunelMapa(tMapa* mapa) {
 }
 
 bool AcessouTunelMapa(tMapa* mapa, tPosicao* posicao) {
-    return EntrouTunel(mapa->tunel, posicao);
+    return EntrouTunel(ObtemTunelMapa(mapa), posicao);
 }
 
 void EntraTunelMapa(tMapa* mapa, tPosicao* posicao) {
-    LevaFinalTunel(mapa->tunel, posicao);
+    LevaFinalTunel(ObtemTunelMapa(mapa), posicao);
 }
 
 void DesalocaMapa(tMapa* mapa) {
@@ -253,7 +250,7 @@ void DesalocaMapa(tMapa* mapa) {
 
     // Desaloca Tunel do Mapa
     if (PossuiTunelMapa(mapa)) {
-        DesalocaTunel(mapa->tunel);
+        DesalocaTunel(ObtemTunelMapa(mapa));
     }
 
     // Desaloca Mapa

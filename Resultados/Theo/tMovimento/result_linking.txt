@@ -1,0 +1,15 @@
+/usr/bin/ld: Resultados/Theo/tMovimento/main.o: in function `InsereNovoMovimentoResumo':
+main.c:(.text+0x8a): undefined reference to `CriaMovimento'
+/usr/bin/ld: Resultados/Theo/tMovimento/main.o: in function `SalvaResumo':
+main.c:(.text+0x1a5): undefined reference to `ObtemNumeroMovimento'
+/usr/bin/ld: main.c:(.text+0x1d1): undefined reference to `ObtemComandoMovimento'
+/usr/bin/ld: main.c:(.text+0x1fd): undefined reference to `ObtemAcaoMovimento'
+/usr/bin/ld: Resultados/Theo/tMovimento/main.o: in function `DesalocaResumo':
+main.c:(.text+0x322): undefined reference to `DesalocaMovimento'
+/usr/bin/ld: Resultados/Theo/tMovimento/tPacman.o: in function `ClonaHistoricoDeMovimentosSignificativosPacman':
+tPacman.c:(.text+0x4ae): undefined reference to `CriaMovimento'
+/usr/bin/ld: Resultados/Theo/tMovimento/tPacman.o: in function `InsereNovoMovimentoSignificativoPacman':
+tPacman.c:(.text+0x520): undefined reference to `CriaMovimento'
+/usr/bin/ld: Resultados/Theo/tMovimento/tPacman.o: in function `DesalocaPacman':
+tPacman.c:(.text+0xb28): undefined reference to `DesalocaMovimento'
+collect2: error: ld returned 1 exit status

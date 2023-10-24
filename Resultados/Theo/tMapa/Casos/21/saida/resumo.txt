@@ -1,0 +1,7 @@
+Movimento 4 (d) pegou comida
+Movimento 8 (w) pegou comida
+Movimento 9 (w) pegou comida
+Movimento 16 (d) colidiu com a parede
+Movimento 24 (d) pegou comida
+Movimento 25 (s) pegou comida
+Movimento 27 (s) pegou comida
