@@ -1,0 +1,3 @@
+Movimento 4 (d) pegou comida
+Movimento 7 (w) pegou comida
+Movimento 8 (d) fim de jogo por encostar em um fantasma

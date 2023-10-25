@@ -1,0 +1,15 @@
+==176284== Memcheck, a memory error detector
+==176284== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==176284== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==176284== Command: Resultados/Theo/tTunel/prog Resultados/Theo/tTunel/Casos/26
+==176284== Parent PID: 176283
+==176284== 
+==176284== 
+==176284== HEAP SUMMARY:
+==176284==     in use at exit: 0 bytes in 0 blocks
+==176284==   total heap usage: 76,006 allocs, 76,006 frees, 687,586 bytes allocated
+==176284== 
+==176284== All heap blocks were freed -- no leaks are possible
+==176284== 
+==176284== For lists of detected and suppressed errors, rerun with: -s
+==176284== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,15 @@
+==180503== Memcheck, a memory error detector
+==180503== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==180503== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==180503== Command: Resultados/Theo/tPosicao/prog Resultados/Theo/tPosicao/Casos/17
+==180503== Parent PID: 180502
+==180503== 
+==180503== 
+==180503== HEAP SUMMARY:
+==180503==     in use at exit: 0 bytes in 0 blocks
+==180503==   total heap usage: 5,646 allocs, 5,646 frees, 90,708 bytes allocated
+==180503== 
+==180503== All heap blocks were freed -- no leaks are possible
+==180503== 
+==180503== For lists of detected and suppressed errors, rerun with: -s
+==180503== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
