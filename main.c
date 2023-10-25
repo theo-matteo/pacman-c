@@ -13,12 +13,7 @@ int main (int argc, char *argv[]) {
     }
 
     tMapa *mapa = CriaMapa(argv[1]);
-
-    for (int i = 0; i < mapa->nLinhas; i++) {
-        printf("%s\n", mapa->grid[i]);
-    }
     
-    DesalocaMapa(mapa);
     
     return 0;
 }

@@ -1,5 +1,76 @@
 #include "tPacman.h"
 
+/* Atualiza o Numero de Colisoes de Acordo com o Comando */
+void AtualizaNumeroColisoes (COMANDO comando, tPacman* pacman) {
+    if (comando == MOV_ESQUERDA) {
+        pacman->nColisoesParedeEsquerda++;
+    }
+    else if (comando == MOV_DIREITA) {
+        pacman->nColisoesParedeDireita++;
+    }
+    else if (comando == MOV_CIMA) {
+        pacman->nColisoesParedeCima++;
+    }
+    else {
+        pacman->nColisoesParedeBaixo++;
+    }
+}
+
+/* Cria uma posicao nova de acordo com o Comando */
+tPosicao* CriaPosicaoMovimento (COMANDO comando, tPacman* pacman) {
+
+    int linha = ObtemLinhaPosicao(ObtemPosicaoPacman(pacman));
+    int coluna = ObtemColunaPosicao(ObtemPosicaoPacman(pacman));
+
+    if (comando == MOV_ESQUERDA) {
+       return CriaPosicao(linha, coluna - 1); 
+    }
+    else if (comando == MOV_DIREITA) {
+        return CriaPosicao(linha, coluna + 1); 
+    }
+    else if (comando == MOV_CIMA) {
+        return CriaPosicao(linha - 1, coluna); 
+    }
+    else if (comando == MOV_BAIXO) {
+        return CriaPosicao(linha + 1, coluna); 
+    }
+
+    return NULL;
+}
+
+/* Atualiza o Numero de Movimentos de Acordo com o Comando */
+void AtualizaNumeroMovimentos (COMANDO comando, tPacman* pacman) {
+    if (comando == MOV_ESQUERDA) {
+       pacman->nMovimentosEsquerda++; 
+    }
+    else if (comando == MOV_DIREITA) {
+        pacman->nMovimentosDireita++; 
+    }
+    else if (comando == MOV_CIMA) {
+        pacman->nMovimentosCima++;
+    }
+    else if (comando == MOV_BAIXO) {
+        pacman->nMovimentosBaixo++;
+    }
+}
+
+/* Atualiza o Numero de Comidas de Acordo com o Comando */
+void AtualizaNumeroComidasObtidas (COMANDO comando, tPacman* pacman) {
+     if (comando == MOV_ESQUERDA) {
+       pacman->nFrutasComidasEsquerda++;; 
+    }
+    else if (comando == MOV_DIREITA) {
+        pacman->nFrutasComidasDireita++;
+    }
+    else if (comando == MOV_CIMA) {
+        pacman->nFrutasComidasCima++;
+    }
+    else if (comando == MOV_BAIXO) {
+        pacman->nFrutasComidasBaixo++;
+    }
+}
+
+
 tPacman* CriaPacman(tPosicao* posicao) {
 
     if (posicao == NULL) {
@@ -83,112 +154,58 @@ int EstaVivoPacman(tPacman* pacman) {
 
 void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
 
-    int linha = ObtemLinhaPosicao(ObtemPosicaoPacman(pacman));
-    int coluna = ObtemColunaPosicao(ObtemPosicaoPacman(pacman)); 
+    /* Refere a posicao antes de realizar a movimentacao */
+    tPosicao *posicaoAtualPacman = ClonaPosicao(ObtemPosicaoPacman(pacman));
 
-    tPosicao *posicaoNova = NULL;
+    /* Refere a posicao apos o movimento*/
+    tPosicao *posicaoNova = CriaPosicaoMovimento(comando, pacman);
 
-    if (comando == MOV_ESQUERDA) {
+    /* Flag para Verificar se o Movimento foi bem sucedido */
+    bool movimentou = false;
 
-        posicaoNova = CriaPosicao(linha, coluna - 1);
-        pacman->nMovimentosEsquerda++;
-
-        if (EncontrouParedeMapa(mapa, posicaoNova)) {
-            pacman->nColisoesParedeEsquerda++;
-            InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
-        }
-
-        else {
-
-            AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
-
-            if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman))) {
-                pacman->nFrutasComidasEsquerda++;
-                InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
-            }
-        }
-    }
-    else if (comando == MOV_DIREITA) {
-
-        posicaoNova = CriaPosicao(linha, coluna + 1);
-        pacman->nMovimentosDireita++;
-
-        if (EncontrouParedeMapa(mapa, posicaoNova)) {
-            pacman->nColisoesParedeDireita++;
-            InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
-        }
-        else {
-            
-            AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
-
-            if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman))) {
-                pacman->nFrutasComidasDireita++;
-                InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
-            }
-        }
-    }
+    /* Atualiza o Numero de Movimentos de acordo com o Comando */
+    AtualizaNumeroMovimentos(comando, pacman);
     
-    else if (comando == MOV_CIMA) {
-
-        posicaoNova = CriaPosicao(linha - 1, coluna);
-        pacman->nMovimentosCima++;
-
-        if (EncontrouParedeMapa(mapa, posicaoNova)) {
-            pacman->nColisoesParedeCima++;
-            InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
-        }
-        else {
-            AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
-
-            if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman))) {
-                pacman->nFrutasComidasCima++;
-                InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
-            }
-        }
+    if (EncontrouParedeMapa(mapa, posicaoNova)) {
+        AtualizaNumeroColisoes(comando, pacman);
+        InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
     }
-
     else {
 
-        posicaoNova = CriaPosicao(linha + 1, coluna);
-        pacman->nMovimentosBaixo++;
+        /* Atualiza a posicao do Pacman*/
+        AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
+        movimentou = true;
 
-        if (EncontrouParedeMapa(mapa, posicaoNova)) {
-            pacman->nColisoesParedeBaixo++;
-            InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
+        /* Verifica se o Pacman Encontrou Comida */
+        if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman))) {
+            AtualizaNumeroComidasObtidas(comando, pacman);
+            InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
         }
-        else {
 
-            AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
-
-            if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman))) {
-                pacman->nFrutasComidasBaixo++;
-                InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
-            }
-        }
     }
 
+    /* Atualiza a trilha do Pacman com o numero do movimento atual */
     AtualizaTrilhaPacman(pacman);
 
-    if (PossuiTunelMapa(mapa)) {
+    /* Verifica se o Pacman Entrou ou Saiu do Tunel (se tiver o Tunel)*/
+    if (PossuiTunelMapa(mapa) && movimentou) {
 
-        tPosicao *posicaoAtualPacman = CriaPosicao(linha, coluna);
-
+        /* Verifica se o Pacman saiu do Tunel, Devolvendo Tunel ao Mapa */
         if (AcessouTunelMapa(mapa, posicaoAtualPacman)) {
-            if (SaoIguaisPosicao(posicaoAtualPacman, ObtemPosicaoPacman(pacman)) == false) {
-                AtualizaItemMapa(mapa, posicaoAtualPacman, '@'); 
-            } 
+            AtualizaItemMapa(mapa, posicaoAtualPacman, '@'); 
         }
 
-        DesalocaPosicao(posicaoAtualPacman);
-
+        /* Verifica se Após Movimentar, Entrou em um Tunel */
         if (AcessouTunelMapa(mapa, posicaoNova)) {
             EntraTunelMapa(mapa, ObtemPosicaoPacman(pacman));
             AtualizaTrilhaPacman(pacman);
         }
+        
     }
 
     AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), '>'); 
     DesalocaPosicao(posicaoNova);
+    DesalocaPosicao(posicaoAtualPacman);
 }
 
 void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas) {
@@ -261,10 +278,13 @@ void SalvaTrilhaPacman(tPacman* pacman) {
 
 void InsereNovoMovimentoSignificativoPacman(tPacman* pacman, COMANDO comando, const char* acao) {
 
-    // Incrementa o numero de Movimentos Significativos
+    /* Incrementa o numero de Movimentos Significativos */
     pacman->nMovimentosSignificativos++;
 
+    /* Obtem o Numero de Movimentos Significativos atual */
     int qtdMovimentosSig = ObtemNumeroMovimentosSignificativosPacman(pacman);
+
+    /* Obtem o Numero do Movimento Atual */
     int nMovimento = ObtemNumeroAtualMovimentosPacman(pacman);
 
     tMovimento *movimento = CriaMovimento(nMovimento, comando, acao);

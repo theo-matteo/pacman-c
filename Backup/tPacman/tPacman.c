@@ -97,7 +97,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
             pacman->nColisoesParedeEsquerda++;
             InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
         }
-        
+
         else {
 
             AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
@@ -167,15 +167,30 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
         }
     }
 
+    AtualizaTrilhaPacman(pacman);
 
     if (PossuiTunelMapa(mapa)) {
+
+        /* Obtem a Posicao Atual do Pacman, antes de 'Movimentar' */
+        tPosicao *posicaoAtualPacman = CriaPosicao(linha, coluna);
+
+        /* Verifica se o Pacman saiu da uma Posicao de Tunel */
+        if (AcessouTunelMapa(mapa, posicaoAtualPacman)) {
+            if (SaoIguaisPosicao(posicaoAtualPacman, ObtemPosicaoPacman(pacman)) == false) {
+                AtualizaItemMapa(mapa, posicaoAtualPacman, '@'); 
+            } 
+        }
+
+        DesalocaPosicao(posicaoAtualPacman);
+
+        /* Verifica se Após Movimentar, Entrou em um Tunel */
         if (AcessouTunelMapa(mapa, posicaoNova)) {
             EntraTunelMapa(mapa, ObtemPosicaoPacman(pacman));
+            AtualizaTrilhaPacman(pacman);
         }
     }
 
     AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), '>'); 
-    AtualizaTrilhaPacman(pacman);
     DesalocaPosicao(posicaoNova);
 }
 

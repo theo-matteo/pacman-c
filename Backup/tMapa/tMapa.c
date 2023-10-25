@@ -1,45 +1,5 @@
 #include "tMapa.h"
 
-/* Realiza Contagem de Comidas Iniciais do Mapa*/
-void ContagemNumeroComidas (tMapa *mapa) {
-    for (int i = 0; i < mapa->nLinhas; i++) {
-        for (int j = 0; j < mapa->nColunas; j++) {
-            if (mapa->grid[i][j] == '*') {
-                mapa->nFrutasAtual++;
-            }
-        }
-    }
-}
-
-/* Verifica se o Mapa possui Tunel, se tiver Realiza Alocacao */
-void ProcuraCriaTunelMapa(tMapa *mapa) {
-
-    int linha1 = -1, linha2 = -1;
-    int coluna1 = -1, coluna2 = -1;
-    bool found = false;
-
-    for (int i = 0; i < mapa->nLinhas; i++) {
-        for (int j = 0; j < mapa->nColunas; j++) {
-            if (mapa->grid[i][j] == '@') {
-                if (linha1 == -1 && coluna1 == -1) {
-                    linha1 = i;
-                    coluna1 = j;
-                }
-                else {
-                    linha2 = i;
-                    coluna2 = j;
-                    found = true;
-                }
-            } 
-        }
-    }
-
-    if (found == true) {
-        mapa->tunel = CriaTunel(linha1, coluna1, linha2, coluna2);
-    }
-
-}
-
 tMapa* CriaMapa(const char* caminhoConfig) {
 
     char diretorio[1000];
@@ -106,11 +66,38 @@ tMapa* CriaMapa(const char* caminhoConfig) {
         fscanf(file,"%[^\n]\n", mapa->grid[i]); 
     }   
 
-   
-    ContagemNumeroComidas(mapa);
-    ProcuraCriaTunelMapa(mapa);
+    /* Varre o Mapa contando comidas e Procurando Tunel */
+    int linha1 = -1, linha2 = -1;
+    int coluna1 = -1, coluna2 = -1;
+    int found = 0;
+
+    for (int i = 0; i < mapa->nLinhas; i++) {
+        for (int j = 0; j < mapa->nColunas; j++) {
+
+            if (mapa->grid[i][j] == '*') {
+                mapa->nFrutasAtual++;
+            }
+
+            if (mapa->grid[i][j] == '@') {
+                if (linha1 == -1 && coluna1 == -1) {
+                    linha1 = i;
+                    coluna1 = j;
+                }
+                else {
+                    linha2 = i;
+                    coluna2 = j;
+                    found = 1;
+                }
+            } 
+        }
+    }
+
+    if (found == 1) {
+        mapa->tunel = CriaTunel(linha1, coluna1, linha2, coluna2);
+    }
+
+
     fclose(file);
-    
     return mapa;
 }
 
