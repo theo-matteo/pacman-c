@@ -7,8 +7,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "tPacman.c",
-                "*.o",
+                "*.c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
