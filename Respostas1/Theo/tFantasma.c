@@ -87,7 +87,7 @@ void MoveFantasma (tFantasma* fantasma, tMapa* mapa) {
         if (PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, posicaoAtualFantasma)) {
             AtualizaItemMapa(mapa, posicaoAtualFantasma, '@'); 
         }
-        else {
+        else if (ObtemItemMapa(mapa, posicaoAtualFantasma) != '>') {
             AtualizaItemMapa(mapa, posicaoAtualFantasma, ' ');
         }
     }

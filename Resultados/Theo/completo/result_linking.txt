@@ -1,3 +1,39 @@
 /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
 (.text+0x1b): undefined reference to `main'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `CriaPosicaoMovimento':
+tPacman.c:(.text+0x91): undefined reference to `ObtemLinhaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0xa8): undefined reference to `ObtemColunaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0xc3): undefined reference to `CriaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0xdd): undefined reference to `CriaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0xf7): undefined reference to `CriaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x111): undefined reference to `CriaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `ClonaPacman':
+tPacman.c:(.text+0x33f): undefined reference to `ClonaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `ClonaHistoricoDeMovimentosSignificativosPacman':
+tPacman.c:(.text+0x3bf): undefined reference to `ObtemNumeroMovimento'
+/usr/bin/ld: tPacman.c:(.text+0x3e1): undefined reference to `ObtemComandoMovimento'
+/usr/bin/ld: tPacman.c:(.text+0x403): undefined reference to `ObtemAcaoMovimento'
+/usr/bin/ld: tPacman.c:(.text+0x42f): undefined reference to `CriaMovimento'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `MovePacman':
+tPacman.c:(.text+0x4a5): undefined reference to `ClonaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x4e6): undefined reference to `EncontrouParedeMapa'
+/usr/bin/ld: tPacman.c:(.text+0x536): undefined reference to `AtualizaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x54e): undefined reference to `AtualizaItemMapa'
+/usr/bin/ld: tPacman.c:(.text+0x570): undefined reference to `EncontrouComidaMapa'
+/usr/bin/ld: tPacman.c:(.text+0x5b5): undefined reference to `PossuiTunelMapa'
+/usr/bin/ld: tPacman.c:(.text+0x5d2): undefined reference to `AcessouTunelMapa'
+/usr/bin/ld: tPacman.c:(.text+0x5ee): undefined reference to `AtualizaItemMapa'
+/usr/bin/ld: tPacman.c:(.text+0x601): undefined reference to `AcessouTunelMapa'
+/usr/bin/ld: tPacman.c:(.text+0x623): undefined reference to `EntraTunelMapa'
+/usr/bin/ld: tPacman.c:(.text+0x652): undefined reference to `AtualizaItemMapa'
+/usr/bin/ld: tPacman.c:(.text+0x65e): undefined reference to `DesalocaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x66a): undefined reference to `DesalocaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `AtualizaTrilhaPacman':
+tPacman.c:(.text+0x7c2): undefined reference to `ObtemLinhaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0x7d9): undefined reference to `ObtemColunaPosicao'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `InsereNovoMovimentoSignificativoPacman':
+tPacman.c:(.text+0x9a9): undefined reference to `CriaMovimento'
+/usr/bin/ld: Resultados/Theo/completo/tPacman.o: in function `DesalocaPacman':
+tPacman.c:(.text+0xa74): undefined reference to `DesalocaPosicao'
+/usr/bin/ld: tPacman.c:(.text+0xa9c): undefined reference to `DesalocaMovimento'
 collect2: error: ld returned 1 exit status

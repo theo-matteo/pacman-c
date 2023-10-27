@@ -1,0 +1,9 @@
+/usr/bin/ld: Resultados/Theo/tTunel/tMapa.o: in function `CriaMapa':
+tMapa.c:(.text+0x3ea): undefined reference to `CriaTunel'
+/usr/bin/ld: Resultados/Theo/tTunel/tMapa.o: in function `AcessouTunelMapa':
+tMapa.c:(.text+0x8a1): undefined reference to `EntrouTunel'
+/usr/bin/ld: Resultados/Theo/tTunel/tMapa.o: in function `EntraTunelMapa':
+tMapa.c:(.text+0x8ce): undefined reference to `LevaFinalTunel'
+/usr/bin/ld: Resultados/Theo/tTunel/tMapa.o: in function `DesalocaMapa':
+tMapa.c:(.text+0x940): undefined reference to `DesalocaTunel'
+collect2: error: ld returned 1 exit status

@@ -12,6 +12,7 @@
 #include "tTunel.h"
 
 typedef struct{
+    char diretorio_jogo[1000];
     tPacman *pacman;
     tFantasma **fantasmas;
     tMapa *mapa;
@@ -21,15 +22,23 @@ tJogo* CriaJogo (const char* caminhoConfig);
 
 void ExecutaJogo (tJogo* jogo);
 
-int AcabouJogo (tJogo* jogo);
-
-void DesalocaJogo (tJogo* jogo);
+COMANDO LeComandoTeclado ();
 
 tMapa* ObtemMapaJogo (tJogo* jogo);
 
-tMapa* ObtemPacmanJogo (tJogo* jogo);
+tPacman* ObtemPacmanJogo (tJogo* jogo);
 
-COMANDO LeComandoTeclado ();
+tFantasma** ObtemFantasmasJogo (tJogo* jogo);
+
+bool VerificaColisao (tPosicao *posAnteriorPacman, tPosicao *posAnteriorFantasma, tFantasma* fantasma, tPacman* pacman);
+
+void MataPacmanJogo (tMapa* mapa, tPacman* pacman);
+
+void AtualizaComidasPacman (tPacman* pacman, COMANDO comando);
+
+void PrintaMapaJogo (tMapa* mapa);
+
+void DesalocaJogo (tJogo* jogo);
 
 
 #endif

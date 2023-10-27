@@ -174,6 +174,8 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
 
         /* Atualiza a posicao do Pacman*/
         AtualizaPosicao(ObtemPosicaoPacman(pacman), posicaoNova);
+        AtualizaItemMapa(mapa, posicaoAtualPacman, ' ');
+
         movimentou = true;
 
         /* Verifica se o Pacman Encontrou Comida */
@@ -186,6 +188,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
 
     /* Atualiza a trilha do Pacman com o numero do movimento atual */
     AtualizaTrilhaPacman(pacman);
+
 
     /* Verifica se o Pacman Entrou ou Saiu do Tunel (se tiver o Tunel)*/
     if (PossuiTunelMapa(mapa) && movimentou) {
