@@ -1,0 +1,45 @@
+==290283== Memcheck, a memory error detector
+==290283== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==290283== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==290283== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/03
+==290283== Parent PID: 290282
+==290283== 
+==290283== Use of uninitialised value of size 8
+==290283==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==290283==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==290283==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==290283== 
+==290283== Invalid read of size 8
+==290283==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==290283==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==290283==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==290283==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==290283== 
+==290283== 
+==290283== Process terminating with default action of signal 11 (SIGSEGV)
+==290283==  Access not within mapped region at address 0x0
+==290283==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==290283==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==290283==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==290283==  If you believe this happened as a result of a stack
+==290283==  overflow in your program's main thread (unlikely but
+==290283==  possible), you can try to increase the size of the
+==290283==  main thread stack using the --main-stacksize= flag.
+==290283==  The main thread stack size used in this run was 8388608.
+==290283== 
+==290283== HEAP SUMMARY:
+==290283==     in use at exit: 2,832 bytes in 45 blocks
+==290283==   total heap usage: 1,876 allocs, 1,831 frees, 64,010 bytes allocated
+==290283== 
+==290283== LEAK SUMMARY:
+==290283==    definitely lost: 0 bytes in 0 blocks
+==290283==    indirectly lost: 0 bytes in 0 blocks
+==290283==      possibly lost: 0 bytes in 0 blocks
+==290283==    still reachable: 2,832 bytes in 45 blocks
+==290283==         suppressed: 0 bytes in 0 blocks
+==290283== Reachable blocks (those to which a pointer was found) are not shown.
+==290283== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==290283== 
+==290283== Use --track-origins=yes to see where uninitialised values come from
+==290283== For lists of detected and suppressed errors, rerun with: -s
+==290283== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

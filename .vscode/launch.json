@@ -5,7 +5,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["/home/theo/Pacman/Casos/17/"],
+            "args": ["/home/theo/Pacman/Casos/01/"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

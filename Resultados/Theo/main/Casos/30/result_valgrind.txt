@@ -1,0 +1,45 @@
+==297549== Memcheck, a memory error detector
+==297549== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==297549== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==297549== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/30
+==297549== Parent PID: 297548
+==297549== 
+==297549== Use of uninitialised value of size 8
+==297549==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==297549==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==297549==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==297549== 
+==297549== Invalid read of size 8
+==297549==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==297549==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==297549==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==297549==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==297549== 
+==297549== 
+==297549== Process terminating with default action of signal 11 (SIGSEGV)
+==297549==  Access not within mapped region at address 0x0
+==297549==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==297549==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==297549==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==297549==  If you believe this happened as a result of a stack
+==297549==  overflow in your program's main thread (unlikely but
+==297549==  possible), you can try to increase the size of the
+==297549==  main thread stack using the --main-stacksize= flag.
+==297549==  The main thread stack size used in this run was 8388608.
+==297549== 
+==297549== HEAP SUMMARY:
+==297549==     in use at exit: 1,452 bytes in 35 blocks
+==297549==   total heap usage: 556 allocs, 521 frees, 13,560 bytes allocated
+==297549== 
+==297549== LEAK SUMMARY:
+==297549==    definitely lost: 0 bytes in 0 blocks
+==297549==    indirectly lost: 0 bytes in 0 blocks
+==297549==      possibly lost: 0 bytes in 0 blocks
+==297549==    still reachable: 1,452 bytes in 35 blocks
+==297549==         suppressed: 0 bytes in 0 blocks
+==297549== Reachable blocks (those to which a pointer was found) are not shown.
+==297549== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==297549== 
+==297549== Use --track-origins=yes to see where uninitialised values come from
+==297549== For lists of detected and suppressed errors, rerun with: -s
+==297549== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

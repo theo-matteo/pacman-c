@@ -57,7 +57,7 @@ void AtualizaNumeroMovimentos (COMANDO comando, tPacman* pacman) {
 /* Atualiza o Numero de Comidas de Acordo com o Comando */
 void AtualizaNumeroComidasObtidas (COMANDO comando, tPacman* pacman) {
      if (comando == MOV_ESQUERDA) {
-       pacman->nFrutasComidasEsquerda++;; 
+       pacman->nFrutasComidasEsquerda++;
     }
     else if (comando == MOV_DIREITA) {
         pacman->nFrutasComidasDireita++;
