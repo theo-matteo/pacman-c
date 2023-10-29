@@ -1,45 +1,45 @@
-==293247== Memcheck, a memory error detector
-==293247== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==293247== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==293247== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/14
-==293247== Parent PID: 293246
-==293247== 
-==293247== Use of uninitialised value of size 8
-==293247==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==293247==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==293247==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==293247== 
-==293247== Invalid read of size 8
-==293247==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==293247==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==293247==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==293247==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==293247== 
-==293247== 
-==293247== Process terminating with default action of signal 11 (SIGSEGV)
-==293247==  Access not within mapped region at address 0x0
-==293247==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==293247==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==293247==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==293247==  If you believe this happened as a result of a stack
-==293247==  overflow in your program's main thread (unlikely but
-==293247==  possible), you can try to increase the size of the
-==293247==  main thread stack using the --main-stacksize= flag.
-==293247==  The main thread stack size used in this run was 8388608.
-==293247== 
-==293247== HEAP SUMMARY:
-==293247==     in use at exit: 1,180 bytes in 28 blocks
-==293247==   total heap usage: 344 allocs, 316 frees, 9,453 bytes allocated
-==293247== 
-==293247== LEAK SUMMARY:
-==293247==    definitely lost: 0 bytes in 0 blocks
-==293247==    indirectly lost: 0 bytes in 0 blocks
-==293247==      possibly lost: 0 bytes in 0 blocks
-==293247==    still reachable: 1,180 bytes in 28 blocks
-==293247==         suppressed: 0 bytes in 0 blocks
-==293247== Reachable blocks (those to which a pointer was found) are not shown.
-==293247== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==293247== 
-==293247== Use --track-origins=yes to see where uninitialised values come from
-==293247== For lists of detected and suppressed errors, rerun with: -s
-==293247== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==108460== Memcheck, a memory error detector
+==108460== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==108460== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==108460== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/14
+==108460== Parent PID: 108459
+==108460== 
+==108460== Use of uninitialised value of size 8
+==108460==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==108460==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==108460==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==108460== 
+==108460== Invalid read of size 8
+==108460==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==108460==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==108460==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==108460==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==108460== 
+==108460== 
+==108460== Process terminating with default action of signal 11 (SIGSEGV)
+==108460==  Access not within mapped region at address 0x0
+==108460==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==108460==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==108460==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==108460==  If you believe this happened as a result of a stack
+==108460==  overflow in your program's main thread (unlikely but
+==108460==  possible), you can try to increase the size of the
+==108460==  main thread stack using the --main-stacksize= flag.
+==108460==  The main thread stack size used in this run was 8388608.
+==108460== 
+==108460== HEAP SUMMARY:
+==108460==     in use at exit: 1,180 bytes in 28 blocks
+==108460==   total heap usage: 344 allocs, 316 frees, 9,453 bytes allocated
+==108460== 
+==108460== LEAK SUMMARY:
+==108460==    definitely lost: 0 bytes in 0 blocks
+==108460==    indirectly lost: 0 bytes in 0 blocks
+==108460==      possibly lost: 0 bytes in 0 blocks
+==108460==    still reachable: 1,180 bytes in 28 blocks
+==108460==         suppressed: 0 bytes in 0 blocks
+==108460== Reachable blocks (those to which a pointer was found) are not shown.
+==108460== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==108460== 
+==108460== Use --track-origins=yes to see where uninitialised values come from
+==108460== For lists of detected and suppressed errors, rerun with: -s
+==108460== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
