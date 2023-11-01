@@ -206,7 +206,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
         
     }
 
-    AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), '>'); 
     DesalocaPosicao(posicaoNova);
     DesalocaPosicao(posicaoAtualPacman);
 }

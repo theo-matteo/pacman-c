@@ -40,11 +40,11 @@ tPacman* ObtemPacmanJogo (tJogo* jogo);
 
 tFantasma** ObtemFantasmasJogo (tJogo* jogo);
 
-void VerificaColisaoFantasma (tFantasma** fantasmas, tPosicao* posAnteriorPacman);
+void VerificaColisao (COMANDO comando, tFantasma** fantasmas, tMapa* mapa, tPacman* pacman);
 
-bool VerificaColisao (tPosicao *posAnteriorPacman, tPosicao *posAnteriorFantasma, tFantasma* fantasma, tPacman* pacman);
+bool PosicoesDivergiram (COMANDO comando, sentidoMovimento sentido);
 
-void MataPacmanJogo (tMapa* mapa, tPacman* pacman);
+void MataPacmanJogo (tMapa* mapa, tPacman* pacman, COMANDO comando);
 
 void GeraArquivoEstatisticas(tPacman* pacman);
 

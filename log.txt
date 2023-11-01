@@ -1482,7 +1482,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 01:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/01/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,348, frees: 1,348, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,457, frees: 1,457, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1491,7 +1491,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 02:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/02/result_valgrind.txt.
- - Valgrind: Ok! allocs: 166, frees: 166, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 186, frees: 186, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1500,7 +1500,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 03:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/03/result_valgrind.txt.
- - Valgrind: Ok! allocs: 7,894, frees: 7,894, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 8,619, frees: 8,619, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1509,7 +1509,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 04:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/04/result_valgrind.txt.
- - Valgrind: Ok! allocs: 6,930, frees: 6,930, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 7,571, frees: 7,571, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1518,7 +1518,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 05:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/05/result_valgrind.txt.
- - Valgrind: Ok! allocs: 12,690, frees: 12,690, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 13,839, frees: 13,839, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1527,7 +1527,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 06:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/06/result_valgrind.txt.
- - Valgrind: Ok! allocs: 3,318, frees: 3,318, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 3,692, frees: 3,692, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1536,7 +1536,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 07:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/07/result_valgrind.txt.
- - Valgrind: Ok! allocs: 411, frees: 411, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 494, frees: 494, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1545,7 +1545,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 08:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/08/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,409, frees: 1,409, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,616, frees: 1,616, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1554,7 +1554,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 09:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/09/result_valgrind.txt.
- - Valgrind: Ok! allocs: 5,512, frees: 5,512, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 6,334, frees: 6,334, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1563,7 +1563,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 10:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/10/result_valgrind.txt.
- - Valgrind: Ok! allocs: 2,297, frees: 2,297, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 2,609, frees: 2,609, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1572,7 +1572,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 11:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/11/result_valgrind.txt.
- - Valgrind: Ok! allocs: 6,086, frees: 6,086, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 7,009, frees: 7,009, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1581,7 +1581,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 12:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/12/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,638, frees: 1,638, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,786, frees: 1,786, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1590,7 +1590,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 13:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/13/result_valgrind.txt.
- - Valgrind: Ok! allocs: 990, frees: 990, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,096, frees: 1,096, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1599,7 +1599,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 14:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/14/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,131, frees: 1,131, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,253, frees: 1,253, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1608,7 +1608,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 15:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/15/result_valgrind.txt.
- - Valgrind: Ok! allocs: 569, frees: 569, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 617, frees: 617, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1617,7 +1617,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 16:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/16/result_valgrind.txt.
- - Valgrind: Ok! allocs: 286, frees: 286, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 337, frees: 337, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1626,7 +1626,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 17:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/17/result_valgrind.txt.
- - Valgrind: Ok! allocs: 215, frees: 215, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 249, frees: 249, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1635,7 +1635,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 18:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/18/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,083, frees: 1,083, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,173, frees: 1,173, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1644,7 +1644,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 19:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/19/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,429, frees: 1,429, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,555, frees: 1,555, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1653,7 +1653,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 20:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/20/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,503, frees: 1,503, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,636, frees: 1,636, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1662,7 +1662,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 21:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/21/result_valgrind.txt.
- - Valgrind: Ok! allocs: 706, frees: 706, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 765, frees: 765, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1671,7 +1671,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 22:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/22/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,193, frees: 1,193, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,298, frees: 1,298, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1680,7 +1680,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 23:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/23/result_valgrind.txt.
- - Valgrind: Ok! allocs: 968, frees: 968, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,051, frees: 1,051, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1689,7 +1689,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 24:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/24/result_valgrind.txt.
- - Valgrind: Ok! allocs: 805, frees: 805, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 893, frees: 893, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1698,7 +1698,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 25:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/25/result_valgrind.txt.
- - Valgrind: Ok! allocs: 2,977, frees: 2,977, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 3,237, frees: 3,237, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1707,7 +1707,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 26:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/26/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,833, frees: 1,833, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,995, frees: 1,995, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1716,7 +1716,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 27:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/27/result_valgrind.txt.
- - Valgrind: Ok! allocs: 294, frees: 294, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 317, frees: 317, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1725,7 +1725,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 28:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/28/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,402, frees: 1,402, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,524, frees: 1,524, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1734,7 +1734,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 29:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/29/result_valgrind.txt.
- - Valgrind: Ok! allocs: 1,022, frees: 1,022, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,109, frees: 1,109, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1743,7 +1743,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 30:
  - Arquivo de output gerado: Resultados/Theo/completo/Casos/30/result_valgrind.txt.
- - Valgrind: Ok! allocs: 2,395, frees: 2,395, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 2,608, frees: 2,608, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
@@ -1752,273 +1752,273 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 01:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/01/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,695, frees: 1,695, errors: 2140 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,804, frees: 1,804, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 02:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/02/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 277, frees: 277, errors: 198 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Ok! Peso: 1.0
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
- - Pasta main / Caso 03:
- - Arquivo de output gerado: Resultados/Theo/main/Casos/03/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 9,888, frees: 9,888, errors: 21690 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 277, frees: 277, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
+ - Pasta main / Caso 03:
+ - Arquivo de output gerado: Resultados/Theo/main/Casos/03/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 10,613, frees: 10,613, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 04:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/04/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 7,450, frees: 7,450, errors: 9585 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 8,091, frees: 8,091, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 05:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/05/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 13,659, frees: 13,659, errors: 40145 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 14,808, frees: 14,808, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 06:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/06/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 3,759, frees: 3,759, errors: 7440 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 4,133, frees: 4,133, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 07:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/07/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 512, frees: 512, errors: 810 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 595, frees: 595, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 08:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/08/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,667, frees: 1,667, errors: 5125 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,874, frees: 1,874, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 09:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/09/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 6,284, frees: 6,284, errors: 8200 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 7,106, frees: 7,106, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 10:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/10/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2,615, frees: 2,615, errors: 12400 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 2,927, frees: 2,927, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 11:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/11/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 6,968, frees: 6,968, errors: 9210 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 7,891, frees: 7,891, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 12:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/12/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2,054, frees: 2,054, errors: 2190 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 2,202, frees: 2,202, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 13:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/13/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,828, frees: 1,828, errors: 2793 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Ok! Peso: 1.0
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
- - Pasta main / Caso 14:
- - Arquivo de output gerado: Resultados/Theo/main/Casos/14/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,470, frees: 1,470, errors: 1800 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,648, frees: 1,648, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
+ - Pasta main / Caso 14:
+ - Arquivo de output gerado: Resultados/Theo/main/Casos/14/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 1,592, frees: 1,592, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 15:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/15/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 5,444, frees: 5,444, errors: 7494 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Ok! Peso: 1.0
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
- - Pasta main / Caso 16:
- - Arquivo de output gerado: Resultados/Theo/main/Casos/16/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 467, frees: 467, errors: 392 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,094, frees: 1,094, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
+ - Pasta main / Caso 16:
+ - Arquivo de output gerado: Resultados/Theo/main/Casos/16/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 518, frees: 518, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 17:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/17/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 386, frees: 386, errors: 256 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 420, frees: 420, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 18:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/18/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,285, frees: 1,285, errors: 704 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,375, frees: 1,375, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 19:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/19/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,918, frees: 1,918, errors: 1860 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 2,044, frees: 2,044, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 20:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/20/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,841, frees: 1,841, errors: 1965 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,974, frees: 1,974, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 21:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/21/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 895, frees: 895, errors: 570 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 954, frees: 954, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 22:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/22/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,533, frees: 1,533, errors: 1545 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,638, frees: 1,638, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 23:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/23/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,398, frees: 1,398, errors: 810 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,481, frees: 1,481, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 24:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/24/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,058, frees: 1,058, errors: 1290 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,146, frees: 1,146, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 25:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/25/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 3,478, frees: 3,478, errors: 5160 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 3,738, frees: 3,738, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 26:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/26/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2,272, frees: 2,272, errors: 4800 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 2,434, frees: 2,434, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 27:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/27/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 718, frees: 718, errors: 420 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 741, frees: 741, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 28:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/28/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2,077, frees: 2,077, errors: 3000 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 2,199, frees: 2,199, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 29:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/29/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,962, frees: 1,962, errors: 2550 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 2,049, frees: 2,049, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 30:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/30/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2,850, frees: 2,850, errors: 4220 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 3,063, frees: 3,063, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
 
 #######################################
@@ -2036,7 +2036,7 @@ Nome 0: Theo
  - Valgrinds Corretos tTunel: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos tPosicao: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos completo: 30 valgrinds corretos de 30 (não teve desconto na nota)
- - Valgrinds Corretos main: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta main, olhar detalhamento nos prints acima!)
+ - Valgrinds Corretos main: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Cômputo final das Notas:
  - Pasta tPacman (peso 2.5): 180 resultados corretos de 180 / Nota 2.50
  - Pasta tMapa (peso 2.5): 180 resultados corretos de 180 / Nota 2.50
@@ -2044,8 +2044,8 @@ Nome 0: Theo
  - Pasta tTunel (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tPosicao (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta completo (peso 0.0): 180 resultados corretos de 180 / Nota 0
- - Pasta main (peso 3.5): 138 resultados corretos de 180 / Nota 1.56
- - Nota Final Theo: 8.06
+ - Pasta main (peso 3.5): 180 resultados corretos de 180 / Nota 3.50
+ - Nota Final Theo: 10.00
 
 ----------------------------------------------------------------------------
 

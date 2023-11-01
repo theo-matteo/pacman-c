@@ -1,10 +1,3 @@
-#include <stdio.h>
-#include "tMapa.h"
-#include "tMovimento.h"
-#include "tPacman.h"
-#include "tPosicao.h"
-#include "tTunel.h"
-#include "tFantasma.h"
 #include "tJogo.h"
 
 FILE* RedirecionamentoEntrada (const char* caminho);
@@ -20,11 +13,11 @@ int main (int argc, char *argv[]) {
     FILE* arquivoEntrada = RedirecionamentoEntrada(argv[1]);
 
     tJogo *jogo = CriaJogo(argv[1]);
-    if (jogo != NULL) {
-        ExecutaJogo(jogo);
-        DesalocaJogo(jogo);
-    }
 
+    ExecutaJogo(jogo);
+
+    DesalocaJogo(jogo);
+    
     fclose(arquivoEntrada);
     return 0;
 }
@@ -42,6 +35,3 @@ FILE* RedirecionamentoEntrada (const char* caminho) {
 
     return file;
 }
-
-
-

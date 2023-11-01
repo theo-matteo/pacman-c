@@ -1,41 +1,15 @@
-==228016== Memcheck, a memory error detector
-==228016== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==228016== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==228016== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/22
-==228016== Parent PID: 228015
-==228016== 
-==228016== Invalid read of size 1
-==228016==    at 0x484ED24: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==228016==    by 0x48D6D30: __vfprintf_internal (vfprintf-internal.c:1517)
-==228016==    by 0x48C06C9: fprintf (fprintf.c:32)
-==228016==    by 0x10A1C4: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==    by 0x109A93: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==  Address 0x4a8ca34 is 0 bytes after a block of size 20 alloc'd
-==228016==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==228016==    by 0x10AF71: CriaMapa (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==    by 0x109987: CriaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==    by 0x109429: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016== 
-==228016== Invalid read of size 1
-==228016==    at 0x484ED24: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==228016==    by 0x48D6D30: __vfprintf_internal (vfprintf-internal.c:1517)
-==228016==    by 0x48C06C9: fprintf (fprintf.c:32)
-==228016==    by 0x10A4FE: PreencheArquivoSaida (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==    by 0x109BEC: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==  Address 0x4a8ca34 is 0 bytes after a block of size 20 alloc'd
-==228016==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==228016==    by 0x10AF71: CriaMapa (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==    by 0x109987: CriaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016==    by 0x109429: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==228016== 
-==228016== 
-==228016== HEAP SUMMARY:
-==228016==     in use at exit: 0 bytes in 0 blocks
-==228016==   total heap usage: 1,533 allocs, 1,533 frees, 56,893 bytes allocated
-==228016== 
-==228016== All heap blocks were freed -- no leaks are possible
-==228016== 
-==228016== For lists of detected and suppressed errors, rerun with: -s
-==228016== ERROR SUMMARY: 1545 errors from 2 contexts (suppressed: 0 from 0)
+==184335== Memcheck, a memory error detector
+==184335== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==184335== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==184335== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/22
+==184335== Parent PID: 184334
+==184335== 
+==184335== 
+==184335== HEAP SUMMARY:
+==184335==     in use at exit: 0 bytes in 0 blocks
+==184335==   total heap usage: 1,638 allocs, 1,638 frees, 62,757 bytes allocated
+==184335== 
+==184335== All heap blocks were freed -- no leaks are possible
+==184335== 
+==184335== For lists of detected and suppressed errors, rerun with: -s
+==184335== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

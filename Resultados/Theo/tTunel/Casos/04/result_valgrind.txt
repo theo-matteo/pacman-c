@@ -1,15 +1,15 @@
-==204506== Memcheck, a memory error detector
-==204506== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==204506== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==204506== Command: Resultados/Theo/tTunel/prog Resultados/Theo/tTunel/Casos/04
-==204506== Parent PID: 204505
-==204506== 
-==204506== 
-==204506== HEAP SUMMARY:
-==204506==     in use at exit: 0 bytes in 0 blocks
-==204506==   total heap usage: 397,792 allocs, 397,792 frees, 3,408,751 bytes allocated
-==204506== 
-==204506== All heap blocks were freed -- no leaks are possible
-==204506== 
-==204506== For lists of detected and suppressed errors, rerun with: -s
-==204506== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==163005== Memcheck, a memory error detector
+==163005== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==163005== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==163005== Command: Resultados/Theo/tTunel/prog Resultados/Theo/tTunel/Casos/04
+==163005== Parent PID: 163004
+==163005== 
+==163005== 
+==163005== HEAP SUMMARY:
+==163005==     in use at exit: 0 bytes in 0 blocks
+==163005==   total heap usage: 397,792 allocs, 397,792 frees, 3,408,751 bytes allocated
+==163005== 
+==163005== All heap blocks were freed -- no leaks are possible
+==163005== 
+==163005== For lists of detected and suppressed errors, rerun with: -s
+==163005== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

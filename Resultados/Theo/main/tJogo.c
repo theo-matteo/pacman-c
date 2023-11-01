@@ -1,18 +1,23 @@
 #include "tJogo.h"
 #define NUM_FANTASMAS 4
+#define PACMAN '>'
+#define COMIDA '*'
 
 tJogo* CriaJogo (const char* caminhoConfig) {
 
     tJogo *jogo = (tJogo *) malloc (sizeof(tJogo));
     if (jogo == NULL) {
         return NULL;
-    }
+    }   
+
+    /* Inicializa Numero Comidas Obtidas */
+    jogo->numeroComidasObtidas = 0;
 
     /* Cria Mapa do Jogo */
     jogo->mapa = CriaMapa(caminhoConfig);
 
     /* Cria o Pacman */
-    jogo->pacman = CriaPacman(ObtemPosicaoItemMapa(ObtemMapaJogo(jogo), '>'));
+    jogo->pacman = CriaPacman(ObtemPosicaoItemMapa(ObtemMapaJogo(jogo), PACMAN));
 
     /* Alocacao da Lista de Fantasmas */
     jogo->fantasmas = (tFantasma **) malloc (sizeof(tFantasma *) * NUM_FANTASMAS);
@@ -25,6 +30,8 @@ tJogo* CriaJogo (const char* caminhoConfig) {
         jogo->fantasmas[i] = CriaFantasma(ObtemMapaJogo(jogo), i);
     }
 
+
+
     return jogo;
 }
 
@@ -34,15 +41,13 @@ void ExecutaJogo (tJogo* jogo) {
     tPacman *pacman = ObtemPacmanJogo(jogo);
     tMapa *mapa = ObtemMapaJogo(jogo);
 
-    /* Realiza Redirecionamento da Saida para Arquivo */
-    FILE* arquivoSaida = RedirecionamentoSaida();
-
-    /* Cria Arquivo de Inicializacao Jogo */
     GeraArquivoInicializacao(jogo);
 
     /* Cria e Inicializa Trilha do Pacman */
     CriaTrilhaPacman(pacman, ObtemNumeroLinhasMapa(mapa), ObtemNumeroColunasMapa(mapa));
     AtualizaTrilhaPacman(pacman);
+
+    FILE* arquivoSaida = fopen("saida.txt", "w");
 
     while (!AcabouJogo(jogo)) {
 
@@ -50,39 +55,150 @@ void ExecutaJogo (tJogo* jogo) {
         COMANDO comando = LeComandoTeclado();
 
         /* Movimenta Fantasmas */
-        for (int i = 0; i < NUM_FANTASMAS; i++) {
-            if (fantasmas[i] != NULL) {
-                MoveFantasma(fantasmas[i], mapa);
-                if (fantasmas[i]->ocupouComida) {
-                    AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), '*');
-                }
-            }
-        }
+        MovimentaFantasmas(fantasmas, mapa);
 
-        /* Movimenta Pacman */
-        MovePacman(pacman, mapa, comando);
+        /* Move Pacman */
+        MovimentaPacmanMapa(pacman, mapa, comando);
 
-        /* Atualiza Numero de Comidas Obtidas */
+        /* Caso o Fantasma tenha Ocupado Comida, Devolve sua Skin ao Mapa */
+        AtualizaSkinFantasma(fantasmas, mapa);
+
+        /* Atualiza Numero de Comidas Obtidas quando Pacman Pega Comida */
         if (PacmanPegouComida(pacman)) {
-            AtualizaComidasAtuaisMapa(mapa);
+            AtualizaComidasObtidas(jogo);
         }
 
-        /*  Verifica se ha colisoes e Realiza Atualizacoes */
+        /* Verifica Colisao entre o Fantasma e o Pacman */
         VerificaColisao(comando, fantasmas, mapa, pacman);
 
+        /* Atualiza o Arquivo de Saida */
         PreencheArquivoSaida(arquivoSaida, jogo, comando);
     }
 
-    
 
-    /* Geracao de Arquivos */
+
+    /* Salva Arquivos */
     GeraArquivoResumo(pacman);
     SalvaTrilhaPacman(pacman);
-    PreencheDesalocaArquivoSaida(arquivoSaida, jogo);
+    FinalizaArquivoSaida(arquivoSaida, jogo);
     GeraArquivoEstatisticas(pacman);
+    GeraArquivoRanking(pacman);
     GeraArquivoRanking(pacman);
 
     fclose(arquivoSaida);
+}
+
+void MovimentaPacmanMapa (tPacman* pacman, tMapa* mapa, COMANDO comando) {
+
+    tPosicao *posAtualPac = ClonaPosicao(ObtemPosicaoPacman(pacman));
+
+    MovePacman(pacman, mapa, comando);
+
+    if (!SaoIguaisPosicao(posAtualPac, ObtemPosicaoPacman(pacman))) {
+        if (PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, posAtualPac)) {
+                AtualizaItemMapa(mapa, posAtualPac, '@'); 
+        }
+        else {
+            AtualizaItemMapa(mapa, posAtualPac, ' ');
+        }
+    }
+
+    AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), PACMAN);
+    DesalocaPosicao(posAtualPac);
+}
+
+COMANDO LeComandoTeclado() {
+
+    char caractere;
+    scanf(" %c", &caractere);
+
+    if (caractere == 'w') {
+        return MOV_CIMA;
+    }
+    else if (caractere == 's') {
+        return MOV_BAIXO;
+    }
+    else if (caractere == 'a') {
+        return MOV_ESQUERDA;
+    }
+    else {
+        return MOV_DIREITA;
+    }
+
+}
+
+bool AcabouJogo (tJogo* jogo) {
+
+    tPacman* pacman = ObtemPacmanJogo(jogo);
+    tMapa* mapa = ObtemMapaJogo(jogo);
+
+    if (ObtemNumeroAtualMovimentosPacman(pacman) == ObtemNumeroMaximoMovimentosMapa(mapa)) {
+        return true;
+    }
+    else if (jogo->numeroComidasObtidas == ObtemQuantidadeFrutasIniciaisMapa(mapa)) {
+        return true;
+    }
+    else if (!EstaVivoPacman(pacman)) {
+        return true;
+    }
+
+    return false;
+}
+
+void AtualizaComidasObtidas (tJogo* jogo) {
+    jogo->numeroComidasObtidas++;
+}
+
+bool PacmanPegouComida (tPacman* pacman) {
+
+    int nMovimentosig = ObtemNumeroMovimentosSignificativosPacman(pacman);
+    int NumeroMovimentoAtual = ObtemNumeroAtualMovimentosPacman(pacman);
+
+    if (nMovimentosig != 0) {
+
+        char *acao = ObtemAcaoMovimento(pacman->historicoDeMovimentosSignificativos[nMovimentosig - 1]);
+        int numeroMovimento = ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[nMovimentosig - 1]);
+        
+        if (!strcmp(acao, "pegou comida")) {
+            if (NumeroMovimentoAtual == numeroMovimento) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+
+}
+
+void MovimentaFantasmas (tFantasma** fantasmas, tMapa* mapa) {
+
+    for (int i = 0; i < NUM_FANTASMAS; i++) {
+        if (fantasmas[i] != NULL) {
+
+            /* Realiza Movimentacao do Fantasma*/
+            MoveFantasma(fantasmas[i], mapa);
+
+                /* Atualiza o Fantasma para Comida Temporariamente */
+            if (fantasmaOcupandoComida(fantasmas[i])) {
+                 AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), COMIDA);
+            }
+        }
+    }
+
+}
+
+bool fantasmaOcupandoComida (tFantasma* fantasma) {
+    return fantasma->ocupouComida;
+}
+  
+void AtualizaSkinFantasma (tFantasma** fantasmas, tMapa* mapa) {
+    for (int i = 0; i < NUM_FANTASMAS; i++) {
+        if (fantasmas[i] != NULL) {
+            if (ObtemItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i])) == COMIDA) {
+                AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), ObtemCaractereSkin(ObtemSkinFantasma(fantasmas[i])));
+            }
+        }
+    }
 }
 
 void VerificaColisao (COMANDO comando, tFantasma** fantasmas, tMapa* mapa, tPacman* pacman) {
@@ -93,28 +209,24 @@ void VerificaColisao (COMANDO comando, tFantasma** fantasmas, tMapa* mapa, tPacm
             continue;
         }
 
-        char skinCaractere = ObtemCaractereSkin(ObtemSkinFantasma(fantasmas[i]));
+        char skin = ObtemCaractereSkin(ObtemSkinFantasma(fantasmas[i]));
 
-        if (ObtemItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i])) == '*') {
-            AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), skinCaractere);
+        /* Verifica se as Posicoes sao Iguais */
+        if (SaoIguaisPosicao(ObtemPosicaoFantasma(fantasmas[i]), ObtemPosicaoPacman(pacman))) {
+            AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), skin);
+            MataPacmanJogo(mapa, pacman, comando);
         }
 
-        if (ObtemItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i])) == ' ') {
+    
+        else if (ObtemItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i])) == ' ') {
             
-            AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), skinCaractere);
+            AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), skin);
 
             if (PosicoesDivergiram(comando, ObtemSentidoFantasma(fantasmas[i]))) {
                 AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), ' ');
                 MataPacmanJogo(mapa, pacman, comando);
             }
-
         }
-
-        else if (SaoIguaisPosicao(ObtemPosicaoFantasma(fantasmas[i]), ObtemPosicaoPacman(pacman))) {
-            AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), skinCaractere);
-            MataPacmanJogo(mapa, pacman, comando);
-        }
-
     }
 }
 
@@ -136,48 +248,9 @@ bool PosicoesDivergiram (COMANDO comando, sentidoMovimento sentido) {
     return false;  
 }
 
-
 void MataPacmanJogo (tMapa* mapa, tPacman* pacman, COMANDO comando) {
     InsereNovoMovimentoSignificativoPacman(pacman, comando, "fim de jogo por encostar em um fantasma");
     MataPacman(pacman);
-}
-
-bool AcabouJogo (tJogo* jogo) {
-
-    tPacman* pacman = ObtemPacmanJogo(jogo);
-    tMapa* mapa = ObtemMapaJogo(jogo);
-
-    if (ObtemNumeroAtualMovimentosPacman(pacman) == ObtemNumeroMaximoMovimentosMapa(mapa)) {
-        return true;
-    }
-    else if (mapa->nFrutasAtual == 0) {
-        return true;
-    }
-    else if (!EstaVivoPacman(pacman)) {
-        return true;
-    }
-
-    return false;
-}
-
-COMANDO LeComandoTeclado () {
-
-    char caractere;
-    scanf(" %c", &caractere);
-
-    if (caractere == 'w') {
-        return MOV_CIMA;
-    }
-    else if (caractere == 's') {
-        return MOV_BAIXO;
-    }
-    else if (caractere == 'a') {
-        return MOV_ESQUERDA;
-    }
-    else {
-        return MOV_DIREITA;
-    }
-
 }
 
 tMapa* ObtemMapaJogo (tJogo* jogo) {
@@ -192,15 +265,37 @@ tFantasma** ObtemFantasmasJogo (tJogo* jogo) {
     return jogo->fantasmas;
 }
 
-void PrintaMapaJogo (tMapa* mapa) {
+void PreencheArquivoSaida (FILE* file, tJogo* jogo, COMANDO comando) {
 
-    int linha = ObtemNumeroLinhasMapa(mapa);
+    tMapa* mapa = ObtemMapaJogo(jogo);
+    int nLinhasMapa = ObtemNumeroLinhasMapa(mapa);
 
-    for (int i = 0; i < linha; i++) {
-        printf("%s\n", mapa->grid[i]);
+    fprintf(file, "Estado do jogo apos o movimento '%c':\n", ConverteComandoChar(comando));
+
+    for (int i = 0; i < mapa->nLinhas; i++) {
+        for (int j = 0; j < mapa->nColunas; j++) {
+            fprintf(file, "%c", mapa->grid[i][j]);
+        }
+        fprintf(file, "\n");
     }
 
-    printf("\n");
+    fprintf(file, "Pontuacao: %d\n\n", ObtemPontuacaoAtualPacman(ObtemPacmanJogo(jogo)));
+
+}
+
+char ConverteComandoChar (COMANDO comando) {
+    if (comando == MOV_CIMA) {
+        return 'w';
+    }
+    else if (comando == MOV_BAIXO) {
+        return 's';
+    }
+    else if (comando == MOV_ESQUERDA) {
+        return 'a';
+    }
+    else {
+        return 'd';
+    }
 }
 
 void GeraArquivoInicializacao(tJogo* jogo) {
@@ -210,42 +305,22 @@ void GeraArquivoInicializacao(tJogo* jogo) {
         exit(1);
     }
 
-    int linha = ObtemLinhaPosicao(ObtemPosicaoPacman(ObtemPacmanJogo(jogo)));
-    int coluna = ObtemColunaPosicao(ObtemPosicaoPacman(ObtemPacmanJogo(jogo)));
+    int linha = ObtemLinhaPosicao(ObtemPosicaoPacman(ObtemPacmanJogo(jogo))) + 1;
+    int coluna = ObtemColunaPosicao(ObtemPosicaoPacman(ObtemPacmanJogo(jogo))) + 1;
 
     tMapa* mapa = ObtemMapaJogo(jogo);
     int nLinhasMapa = ObtemNumeroLinhasMapa(mapa);
 
-    for (int i = 0; i < nLinhasMapa; i++) {
-        fprintf(file, "%s\n", mapa->grid[i]);
-    }
-
-    fprintf(file, "Pac-Man comecara o jogo na linha %d e coluna %d\n", linha + 1, coluna + 1);
-    fclose(file);
-}
-
-bool PacmanPegouComida (tPacman* pacman) {
-
-    int nMovimentosig = ObtemNumeroMovimentosSignificativosPacman(pacman);
-    int NumeroMovimentoAtual = ObtemNumeroAtualMovimentosPacman(pacman);
-
-    if (nMovimentosig != 0) {
-
-        char *acao = ObtemAcaoMovimento(pacman->historicoDeMovimentosSignificativos[nMovimentosig - 1]);
-        int numeroMovimento = ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[nMovimentosig - 1]);
-        
-        if (!strcmp(acao, "pegou comida")) {
-            if (NumeroMovimentoAtual == numeroMovimento) {
-                return true;
-            }
+    for (int i = 0; i < mapa->nLinhas; i++) {
+        for (int j = 0; j < mapa->nColunas; j++) {
+            fprintf(file, "%c", mapa->grid[i][j]);
         }
+        fprintf(file, "\n");
     }
 
-    return false;
-}
-
-void AtualizaComidasAtuaisMapa (tMapa* mapa) {
-    mapa->nFrutasAtual--;
+    fprintf(file, "Pac-Man comecara o jogo na linha %d e coluna %d\n", linha, coluna);
+    
+    fclose(file);
 }
 
 void GeraArquivoResumo (tPacman* pacman) {
@@ -270,58 +345,17 @@ void GeraArquivoResumo (tPacman* pacman) {
     fclose(file);
 }
 
-char ConverteComandoChar (COMANDO comando) {
-    if (comando == MOV_CIMA) {
-        return 'w';
-    }
-    else if (comando == MOV_BAIXO) {
-        return 's';
-    }
-    else if (comando == MOV_ESQUERDA) {
-        return 'a';
-    }
-    else {
-        return 'd';
-    }
-}
-
-FILE* RedirecionamentoSaida () {
-
-    FILE *file = freopen("saida.txt", "w", stdout);
-    if (file == NULL) {
-        exit(1);
-    }
-
-    return file;
-}
-
-void PreencheArquivoSaida (FILE* file, tJogo* jogo, COMANDO comando) {
-
-    tMapa* mapa = ObtemMapaJogo(jogo);
-    int nLinhasMapa = ObtemNumeroLinhasMapa(mapa);
-
-    fprintf(file, "Estado do jogo apos o movimento '%c':\n", ConverteComandoChar(comando));
-
-    for (int i = 0; i < nLinhasMapa; i++) {
-        fprintf(file, "%s\n", mapa->grid[i]);
-    }
-
-    fprintf(file, "Pontuacao: %d\n\n", ObtemPontuacaoAtualPacman(ObtemPacmanJogo(jogo)));
-
-}
-
-void PreencheDesalocaArquivoSaida (FILE* file, tJogo* jogo) {
+void FinalizaArquivoSaida(FILE* file, tJogo* jogo) {
 
     tMapa* mapa = ObtemMapaJogo(jogo);
 
-    if (mapa->nFrutasAtual == 0 && EstaVivoPacman(ObtemPacmanJogo(jogo))) {
+    if (jogo->numeroComidasObtidas == ObtemQuantidadeFrutasIniciaisMapa(mapa)) {
         fprintf(file, "Voce venceu!\nPontuacao final: %d\n", ObtemPontuacaoAtualPacman(ObtemPacmanJogo(jogo)));
     }
     else {
         fprintf(file, "Game over!\nPontuacao final: %d\n", ObtemPontuacaoAtualPacman(ObtemPacmanJogo(jogo)));
     }
     
-    fclose (file);
 }
 
 void GeraArquivoEstatisticas(tPacman* pacman) {

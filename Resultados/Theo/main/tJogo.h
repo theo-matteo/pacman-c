@@ -12,25 +12,44 @@
 #include "tPosicao.h"
 #include "tTunel.h"
 
-typedef struct{
+typedef struct {
     tPacman* pacman;
     tFantasma** fantasmas;
     tMapa* mapa;
+    int numeroComidasObtidas;
 } tJogo;
 
-void GeraArquivoInicializacao(tJogo* jogo);
+
+void AtualizaSkinFantasma (tFantasma** fantasmas, tMapa* mapa);
+
+/* Fantasma Ocupando Comida */
+bool fantasmaOcupandoComida (tFantasma* fantasma);
+
+/* Realiza Movimentacao dos Fantasmas */
+void MovimentaFantasmas (tFantasma** fantasmas, tMapa* mapa);
+
+/* Movimenta Pacman */
+void MovimentaPacmanMapa (tPacman* pacman, tMapa* mapa, COMANDO comando);
+
+bool PosicoesDivergiram (COMANDO comando, sentidoMovimento sentido);
+
+char ConverteComandoChar (COMANDO comando);
+
+bool PacmanPegouComida (tPacman* pacman);
+
+void AtualizaComidasObtidas (tJogo* jogo);
+
+void VerificaColisao (COMANDO comando, tFantasma** fantasmas, tMapa* mapa, tPacman* pacman);
+
+void PreencheArquivoSaida (FILE* file, tJogo* jogo, COMANDO comando);
 
 tJogo* CriaJogo (const char* caminhoConfig);
 
 void ExecutaJogo (tJogo* jogo);
 
-FILE* RedirecionamentoSaida ();
+COMANDO LeComandoTeclado();
 
-void PreencheArquivoSaida (FILE* file, tJogo* jogo, COMANDO comando);
-
-void PreencheDesalocaArquivoSaida (FILE* file, tJogo* jogo);
-
-COMANDO LeComandoTeclado ();
+void MataPacmanJogo (tMapa* mapa, tPacman* pacman, COMANDO comando);
 
 bool AcabouJogo (tJogo* jogo);
 
@@ -40,29 +59,17 @@ tPacman* ObtemPacmanJogo (tJogo* jogo);
 
 tFantasma** ObtemFantasmasJogo (tJogo* jogo);
 
-void VerificaColisao (COMANDO comando, tFantasma** fantasmas, tMapa* mapa, tPacman* pacman);
-
-bool PosicoesDivergiram (COMANDO comando, sentidoMovimento sentido);
-
-void MataPacmanJogo (tMapa* mapa, tPacman* pacman, COMANDO comando);
-
-void GeraArquivoEstatisticas(tPacman* pacman);
-
-void AtualizaComidasAtuaisMapa (tMapa* mapa);
-
-bool PacmanPegouComida (tPacman* pacman);
-
-void PrintaMapaJogo (tMapa* mapa);
+void GeraArquivoInicializacao(tJogo* jogo);
 
 void GeraArquivoResumo (tPacman* pacman);
 
-void GeraArquivoRanking (tPacman* pacman);
+void FinalizaArquivoSaida(FILE* file, tJogo* jogo);
 
-char ConverteComandoChar (COMANDO comando);
+void  GeraArquivoEstatisticas(tPacman* pacman);
+
+void GeraArquivoRanking(tPacman* pacman);
 
 void DesalocaJogo (tJogo* jogo);
-
-
 
 
 

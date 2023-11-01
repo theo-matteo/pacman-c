@@ -1,41 +1,15 @@
-==224616== Memcheck, a memory error detector
-==224616== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==224616== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==224616== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/11
-==224616== Parent PID: 224615
-==224616== 
-==224616== Invalid read of size 1
-==224616==    at 0x484ED24: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==224616==    by 0x48D6D30: __vfprintf_internal (vfprintf-internal.c:1517)
-==224616==    by 0x48C06C9: fprintf (fprintf.c:32)
-==224616==    by 0x10A1C4: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==    by 0x109A93: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==  Address 0x4a8f374 is 0 bytes after a block of size 100 alloc'd
-==224616==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==224616==    by 0x10AF71: CriaMapa (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==    by 0x109987: CriaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==    by 0x109429: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616== 
-==224616== Invalid read of size 1
-==224616==    at 0x484ED24: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==224616==    by 0x48D6D30: __vfprintf_internal (vfprintf-internal.c:1517)
-==224616==    by 0x48C06C9: fprintf (fprintf.c:32)
-==224616==    by 0x10A4FE: PreencheArquivoSaida (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==    by 0x109BEC: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==  Address 0x4a8f374 is 0 bytes after a block of size 100 alloc'd
-==224616==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==224616==    by 0x10AF71: CriaMapa (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==    by 0x109987: CriaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616==    by 0x109429: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==224616== 
-==224616== 
-==224616== HEAP SUMMARY:
-==224616==     in use at exit: 0 bytes in 0 blocks
-==224616==   total heap usage: 6,968 allocs, 6,968 frees, 274,946 bytes allocated
-==224616== 
-==224616== All heap blocks were freed -- no leaks are possible
-==224616== 
-==224616== For lists of detected and suppressed errors, rerun with: -s
-==224616== ERROR SUMMARY: 9210 errors from 2 contexts (suppressed: 0 from 0)
+==182201== Memcheck, a memory error detector
+==182201== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==182201== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==182201== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/11
+==182201== Parent PID: 182200
+==182201== 
+==182201== 
+==182201== HEAP SUMMARY:
+==182201==     in use at exit: 0 bytes in 0 blocks
+==182201==   total heap usage: 7,891 allocs, 7,891 frees, 287,354 bytes allocated
+==182201== 
+==182201== All heap blocks were freed -- no leaks are possible
+==182201== 
+==182201== For lists of detected and suppressed errors, rerun with: -s
+==182201== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

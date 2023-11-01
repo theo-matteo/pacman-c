@@ -8,7 +8,6 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "*.c",
-                "*.o",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
