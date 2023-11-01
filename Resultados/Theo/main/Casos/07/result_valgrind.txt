@@ -1,45 +1,41 @@
-==106584== Memcheck, a memory error detector
-==106584== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==106584== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==106584== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/07
-==106584== Parent PID: 106583
-==106584== 
-==106584== Use of uninitialised value of size 8
-==106584==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==106584==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==106584==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==106584== 
-==106584== Invalid read of size 8
-==106584==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==106584==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==106584==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==106584==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==106584== 
-==106584== 
-==106584== Process terminating with default action of signal 11 (SIGSEGV)
-==106584==  Access not within mapped region at address 0x0
-==106584==    at 0x10A1C1: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==106584==    by 0x109AAD: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==106584==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
-==106584==  If you believe this happened as a result of a stack
-==106584==  overflow in your program's main thread (unlikely but
-==106584==  possible), you can try to increase the size of the
-==106584==  main thread stack using the --main-stacksize= flag.
-==106584==  The main thread stack size used in this run was 8388608.
-==106584== 
-==106584== HEAP SUMMARY:
-==106584==     in use at exit: 876 bytes in 19 blocks
-==106584==   total heap usage: 130 allocs, 111 frees, 6,264 bytes allocated
-==106584== 
-==106584== LEAK SUMMARY:
-==106584==    definitely lost: 0 bytes in 0 blocks
-==106584==    indirectly lost: 0 bytes in 0 blocks
-==106584==      possibly lost: 0 bytes in 0 blocks
-==106584==    still reachable: 876 bytes in 19 blocks
-==106584==         suppressed: 0 bytes in 0 blocks
-==106584== Reachable blocks (those to which a pointer was found) are not shown.
-==106584== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==106584== 
-==106584== Use --track-origins=yes to see where uninitialised values come from
-==106584== For lists of detected and suppressed errors, rerun with: -s
-==106584== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==223421== Memcheck, a memory error detector
+==223421== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==223421== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==223421== Command: Resultados/Theo/main/prog Resultados/Theo/main/Casos/07
+==223421== Parent PID: 223420
+==223421== 
+==223421== Invalid read of size 1
+==223421==    at 0x484ED24: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==223421==    by 0x48D6D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==223421==    by 0x48C06C9: fprintf (fprintf.c:32)
+==223421==    by 0x10A1C4: GeraArquivoInicializacao (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==    by 0x109A93: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==  Address 0x4a8c6da is 0 bytes after a block of size 10 alloc'd
+==223421==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==223421==    by 0x10AF71: CriaMapa (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==    by 0x109987: CriaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==    by 0x109429: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421== 
+==223421== Invalid read of size 1
+==223421==    at 0x484ED24: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==223421==    by 0x48D6D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==223421==    by 0x48C06C9: fprintf (fprintf.c:32)
+==223421==    by 0x10A4FE: PreencheArquivoSaida (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==    by 0x109BEC: ExecutaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==    by 0x109440: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==  Address 0x4a8c6da is 0 bytes after a block of size 10 alloc'd
+==223421==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==223421==    by 0x10AF71: CriaMapa (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==    by 0x109987: CriaJogo (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421==    by 0x109429: main (in /home/theo/Pacman/Resultados/Theo/main/prog)
+==223421== 
+==223421== 
+==223421== HEAP SUMMARY:
+==223421==     in use at exit: 0 bytes in 0 blocks
+==223421==   total heap usage: 512 allocs, 512 frees, 42,336 bytes allocated
+==223421== 
+==223421== All heap blocks were freed -- no leaks are possible
+==223421== 
+==223421== For lists of detected and suppressed errors, rerun with: -s
+==223421== ERROR SUMMARY: 810 errors from 2 contexts (suppressed: 0 from 0)

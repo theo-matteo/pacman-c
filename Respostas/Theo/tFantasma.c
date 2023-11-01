@@ -72,7 +72,7 @@ void MoveFantasma (tFantasma* fantasma, tMapa* mapa) {
     tPosicao *posicaoNova = PosicaoPosMovimentoFantasma(fantasma);
 
     /* Altera Sentido do Fantasma se Colidir com uma Parede*/
-    if (EncontrouParedeMapa(mapa, posicaoNova)) {
+    if (EncontrouParedeMapa(mapa, posicaoNova) || (PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, posicaoAtualFantasma))) {
         AlteraSentidoFantasma(fantasma);
         DesalocaPosicao(posicaoNova);
         posicaoNova = PosicaoPosMovimentoFantasma(fantasma);
@@ -84,12 +84,7 @@ void MoveFantasma (tFantasma* fantasma, tMapa* mapa) {
         fantasma->ocupouComida = false;
     }
     else {
-        if (PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, posicaoAtualFantasma)) {
-            AtualizaItemMapa(mapa, posicaoAtualFantasma, '@'); 
-        }
-        else  {
-            AtualizaItemMapa(mapa, posicaoAtualFantasma, ' ');
-        }
+        AtualizaItemMapa(mapa, posicaoAtualFantasma, ' ');
     }
 
     /* Verifica se o Fantasma (apos Movimentar) ocupou Posicao de Comida*/

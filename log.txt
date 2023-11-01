@@ -1752,274 +1752,274 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 01:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/01/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 356, frees: 321, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/01/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/01/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/01/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,695, frees: 1,695, errors: 2140 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/01/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 02:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/02/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 111, frees: 91, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/02/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/02/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/02/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 277, frees: 277, errors: 198 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Incorreto!
+ - Resultado para o resumo.txt: Incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/02/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 03:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/03/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,876, frees: 1,831, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/03/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/03/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/03/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 9,888, frees: 9,888, errors: 21690 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/03/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 04:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/04/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 646, frees: 616, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/04/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/04/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/04/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 7,450, frees: 7,450, errors: 9585 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/04/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 05:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/05/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,311, frees: 1,261, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/05/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/05/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/05/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 13,659, frees: 13,659, errors: 40145 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/05/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 06:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/06/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 554, frees: 521, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/06/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/06/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/06/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 3,759, frees: 3,759, errors: 7440 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/06/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 07:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/07/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 130, frees: 111, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/07/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/07/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/07/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 512, frees: 512, errors: 810 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/07/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 08:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/08/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 312, frees: 276, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/08/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/08/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/08/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,667, frees: 1,667, errors: 5125 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/08/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 09:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/09/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 932, frees: 911, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/09/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/09/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/09/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 6,284, frees: 6,284, errors: 8200 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/09/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 10:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/10/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 452, frees: 401, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/10/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/10/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/10/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 2,615, frees: 2,615, errors: 12400 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/10/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 11:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/11/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,032, frees: 1,011, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/11/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/11/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/11/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 6,968, frees: 6,968, errors: 9210 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/11/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 12:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/12/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 421, frees: 391, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/12/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/12/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/12/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 2,054, frees: 2,054, errors: 2190 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/12/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 13:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/13/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 554, frees: 521, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/13/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/13/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/13/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,828, frees: 1,828, errors: 2793 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Incorreto!
+ - Resultado para o resumo.txt: Incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/13/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 14:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/14/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 344, frees: 316, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/14/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/14/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/14/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,470, frees: 1,470, errors: 1800 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/14/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 15:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/15/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 496, frees: 466, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/15/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/15/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/15/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 5,444, frees: 5,444, errors: 7494 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Incorreto!
+ - Resultado para o resumo.txt: Incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/15/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 16:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/16/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 189, frees: 169, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/16/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/16/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/16/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 467, frees: 467, errors: 392 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/16/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 17:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/17/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 189, frees: 169, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/17/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/17/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/17/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 386, frees: 386, errors: 256 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/17/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 18:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/18/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 187, frees: 161, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/18/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/18/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/18/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,285, frees: 1,285, errors: 704 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/18/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 19:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/19/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 499, frees: 466, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/19/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/19/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/19/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,918, frees: 1,918, errors: 1860 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/19/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 20:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/20/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 349, frees: 316, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/20/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/20/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/20/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,841, frees: 1,841, errors: 1965 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/20/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 21:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/21/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 209, frees: 181, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/21/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/21/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/21/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 895, frees: 895, errors: 570 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/21/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 22:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/22/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 346, frees: 316, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/22/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/22/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/22/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,533, frees: 1,533, errors: 1545 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/22/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 23:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/23/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 436, frees: 411, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/23/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/23/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/23/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,398, frees: 1,398, errors: 810 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/23/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 24:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/24/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 269, frees: 241, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/24/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/24/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/24/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,058, frees: 1,058, errors: 1290 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/24/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 25:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/25/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 556, frees: 521, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/25/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/25/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/25/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 3,478, frees: 3,478, errors: 5160 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/25/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 26:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/26/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 526, frees: 481, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/26/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/26/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/26/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 2,272, frees: 2,272, errors: 4800 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/26/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 27:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/27/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 456, frees: 421, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/27/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/27/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/27/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 718, frees: 718, errors: 420 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/27/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 28:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/28/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 691, frees: 651, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/28/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/28/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/28/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 2,077, frees: 2,077, errors: 3000 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/28/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 29:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/29/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 976, frees: 931, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/29/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/29/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/29/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 1,962, frees: 1,962, errors: 2550 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/29/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 30:
  - Arquivo de output gerado: Resultados/Theo/main/Casos/30/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 556, frees: 521, errors: 2 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/30/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/30/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/30/saida/resumo.txt, considerando resultado incorreto!
+ - Valgrind: Incorreto! allocs: 2,850, frees: 2,850, errors: 4220 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Theo/main/Casos/30/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
 
 #######################################
 RESULTADOS FINAIS
@@ -2044,8 +2044,8 @@ Nome 0: Theo
  - Pasta tTunel (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tPosicao (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta completo (peso 0.0): 180 resultados corretos de 180 / Nota 0
- - Pasta main (peso 3.5): 0 resultados corretos de 180 / Nota 0
- - Nota Final Theo: 6.50
+ - Pasta main (peso 3.5): 138 resultados corretos de 180 / Nota 1.56
+ - Nota Final Theo: 8.06
 
 ----------------------------------------------------------------------------
 
