@@ -1,8 +1,0 @@
-tJogo.c: In function ‘PreencheArquivoSaida’:
-tJogo.c:271:9: warning: unused variable ‘nLinhasMapa’ [-Wunused-variable]
-  271 |     int nLinhasMapa = ObtemNumeroLinhasMapa(mapa);
-      |         ^~~~~~~~~~~
-tJogo.c: In function ‘GeraArquivoInicializacao’:
-tJogo.c:312:9: warning: unused variable ‘nLinhasMapa’ [-Wunused-variable]
-  312 |     int nLinhasMapa = ObtemNumeroLinhasMapa(mapa);
-      |         ^~~~~~~~~~~

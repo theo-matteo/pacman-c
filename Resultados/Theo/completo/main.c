@@ -13,9 +13,7 @@ int main (int argc, char *argv[]) {
     FILE* arquivoEntrada = RedirecionamentoEntrada(argv[1]);
 
     tJogo *jogo = CriaJogo(argv[1]);
-
     ExecutaJogo(jogo);
-
     DesalocaJogo(jogo);
     
     fclose(arquivoEntrada);

@@ -27,5 +27,8 @@ char* ObtemAcaoMovimento(tMovimento* movimento) {
 }
 
 void DesalocaMovimento(tMovimento* movimento) {
+    if (movimento == NULL) {
+        return;
+    }
     free(movimento);
 }

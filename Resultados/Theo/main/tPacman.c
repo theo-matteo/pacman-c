@@ -1,4 +1,5 @@
 #include "tPacman.h"
+#define PORTAL '@'
 
 /* Atualiza o Numero de Colisoes de Acordo com o Comando */
 void AtualizaNumeroColisoes (COMANDO comando, tPacman* pacman) {
@@ -195,7 +196,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando) {
 
         /* Verifica se o Pacman saiu do Tunel, Devolvendo Tunel ao Mapa */
         if (AcessouTunelMapa(mapa, posicaoAtualPacman)) {
-            AtualizaItemMapa(mapa, posicaoAtualPacman, '@'); 
+            AtualizaItemMapa(mapa, posicaoAtualPacman, PORTAL); 
         }
 
         /* Verifica se Após Movimentar, Entrou em um Tunel */

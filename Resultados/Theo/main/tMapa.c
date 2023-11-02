@@ -1,10 +1,13 @@
 #include "tMapa.h"
+#define COMIDA '*'
+#define PORTAL '@'
+#define PAREDE '#'
 
 /* Realiza Contagem de Comidas Iniciais do Mapa*/
 void ContagemNumeroComidas (tMapa *mapa) {
     for (int i = 0; i < mapa->nLinhas; i++) {
         for (int j = 0; j < mapa->nColunas; j++) {
-            if (mapa->grid[i][j] == '*') {
+            if (mapa->grid[i][j] == COMIDA) {
                 mapa->nFrutasAtual++;
             }
         }
@@ -20,7 +23,7 @@ void ProcuraCriaTunelMapa(tMapa *mapa) {
 
     for (int i = 0; i < mapa->nLinhas; i++) {
         for (int j = 0; j < mapa->nColunas; j++) {
-            if (mapa->grid[i][j] == '@') {
+            if (mapa->grid[i][j] == PORTAL) {
                 if (linha1 == -1 && coluna1 == -1) {
                     linha1 = i;
                     coluna1 = j;
@@ -180,7 +183,7 @@ bool EncontrouComidaMapa(tMapa* mapa, tPosicao* posicao) {
     else if (coluna >= ObtemNumeroColunasMapa(mapa) || coluna < 0) {
         return false;
     }
-    else if (mapa->grid[linha][coluna] != '*') {
+    else if (mapa->grid[linha][coluna] != COMIDA) {
         return false;
     }
 
@@ -201,7 +204,7 @@ bool EncontrouParedeMapa(tMapa* mapa, tPosicao* posicao) {
     else if (coluna >= ObtemNumeroColunasMapa(mapa) || coluna < 0) {
         return false;
     }
-    else if (mapa->grid[linha][coluna] != '#') {
+    else if (mapa->grid[linha][coluna] != PAREDE) {
         return false;
     }
 

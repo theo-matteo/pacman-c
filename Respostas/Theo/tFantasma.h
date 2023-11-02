@@ -36,46 +36,74 @@ typedef struct tFantasma {
 
 } tFantasma;
 
-/* Cria um Fantasma Dinamicamente. Realiza uma varredura no mapa
-    buscando o fantasma. Se o fantasma estiver no mapa, realiza alocacao.
-    Caso nao esteja, retorna NULL
+/**
+ *  @brief Cria um Fantasma Dinamicamente
+ *  Verifica se o Fantasma esta no mapa. Se nao estiver no mapa, retorna NULL
+ *  @param mapa 
+ *  @param skin 
+ *  @return 
 */
 tFantasma* CriaFantasma (tMapa* mapa, skinFantasma skin);
 
-/*
-    Obtem o sentido Inicial do Fantasma quando inicia o jogo. Por exemplo,
-    o fantasma P retorna CIMA
+/**
+ *  @brief Obtem o sentido Inicial do Fantasma quando inicia o jogo
+ *  @param skin skin do fantasma
+ *  @return 
 */
 sentidoMovimento ObtemSentidoInicialFantasma(skinFantasma skin);
 
-/* Retorna o caractere representante do Fantasma de acordo com a skin, 
-   Por exemplo, o fantasma B retorna 'B'
+/**
+ *  @brief Retorna o caractere representante do Fantasma de acordo com a skin
+ *  @param skin skin do fantasma
+ *  @return caractere que eh a skin do fantasma
 */
 char ObtemCaractereSkin (skinFantasma skin);
 
-/* Retorna a skin do Fantasma*/
+/**
+ *  @brief Obtem skin do fantasma
+ *  @param fantasma fantasma
+ *  @return Retorna a skin do Fantasma
+*/
 skinFantasma ObtemSkinFantasma (tFantasma* fantasma);
 
-/* Realiza movimentacao no Mapa, alem de verificar Sobreposicoes. 
-   Se o fantasma for NULL, apenas fecha a funcao prematuramente
+/**
+ *  @brief Move Fantasma, atulizando sua posicao e atualizando o mapa
+ *  @param fantasma fantasma
+ *  @param mapa mapa do jogo
 */
 void MoveFantasma (tFantasma* fantasma, tMapa* mapa);
 
-/* Retorna a posicao do Fantasma*/
+/**
+ *  @brief Obtem a posicao do fantasma
+ *  @param fantasma fantasma
+ *  @return Retorna a posicao do Fantasma
+*/
 tPosicao* ObtemPosicaoFantasma (tFantasma* fantasma);
 
-/* Retorna a posicao resultante da Movimentacao do Fantasma, Para
-   Isso, e realizado uma verificao do sentido de movimentacao do Fantasma
+/**
+ *  @brief Cria uma posicao de acordo com o movimento do fantasma
+ *  @param fantasma fantasma
+ *  @return Retorna a posicao resultante da movimentacao do fantasma
 */
 tPosicao* PosicaoPosMovimentoFantasma (tFantasma* fantasma);
 
-/* Altera o sentido de movimentacao do fantasma quando encontra uma parede*/
+/**
+ *  @brief Altera o sentido de movimentacao do fantasma quando encontra uma parede
+ *  @param fantasma fantasma
+*/
 void AlteraSentidoFantasma (tFantasma *fantasma);
 
-/* Realiza a desalocacao de memoria do fantasma*/
+/**
+ *  @brief Realiza a desalocacao de memoria do fantasma
+ *  @param fantasma fantasma
+*/
 void DesalocaFantasma (tFantasma* fantasma);
 
-/* Retorna o Sentido de Movimentacao Atual do Fantasma */
+/**
+ *  @brief Obtem o sentido de movimentacao do fantasma
+ *  @param fantasma fantasma
+ *  @return Retorna o sentido de movimentacao atual do fantasma
+*/
 sentidoMovimento ObtemSentidoFantasma (tFantasma* fantasma);
 
 #endif
