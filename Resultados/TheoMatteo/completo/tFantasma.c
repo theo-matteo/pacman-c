@@ -1,4 +1,5 @@
 #include "tFantasma.h"
+#define COMIDA '*'
 
 
 tFantasma* CriaFantasma (tMapa* mapa, skinFantasma skin) {
@@ -60,45 +61,48 @@ sentidoMovimento ObtemSentidoInicialFantasma(skinFantasma skin) {
 
 void MoveFantasma (tFantasma* fantasma, tMapa* mapa) {
 
-    /* Verifica se o Fantasma nao foi Alocado (ou seja, nao esta no mapa)*/
+    /* Verifica se o Fantasma nao foi Alocado (ou seja, nao esta no mapa) */
     if (fantasma == NULL) {
         return;
     }
 
-     /* Posicao atual do fantasma clonada */
-    tPosicao *posicaoAtualFantasma = ClonaPosicao(ObtemPosicaoFantasma(fantasma));
+    /* Verifica se o fantasma ocupou anteriormente posicao de comida e devolve ao mapa */
+    DevolveComidaMapaFantasma(fantasma, mapa);
 
     /* Posicao pos Movimento */
     tPosicao *posicaoNova = PosicaoPosMovimentoFantasma(fantasma);
 
     /* Altera Sentido do Fantasma se Colidir com uma Parede*/
-    if (EncontrouParedeMapa(mapa, posicaoNova) || (PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, posicaoAtualFantasma))) {
+    if (EncontrouParedeMapa(mapa, posicaoNova) || (PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, posicaoNova))) {
         AlteraSentidoFantasma(fantasma);
         DesalocaPosicao(posicaoNova);
         posicaoNova = PosicaoPosMovimentoFantasma(fantasma);
     }
 
-    /* Verifica se o Fantasma Ocupou Posicao de Comida*/
+    /* Atualiza posicao do fantasma */
+    AtualizaPosicao(ObtemPosicaoFantasma(fantasma), posicaoNova);
+
+    /* Verifica se o fantasma apos movimentar ocupou posicao de comida, se nao atualiza skin do fantasma no mapa */
+    if (EncontrouComidaMapa(mapa, ObtemPosicaoFantasma(fantasma))) {
+        fantasma->ocupouComida = true;
+    }
+    else {
+        AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasma), ObtemCaractereSkin(ObtemSkinFantasma(fantasma)));
+    }
+
+    /* Desaloca Posicao Auxiliar */
+    DesalocaPosicao(posicaoNova);
+}
+
+void DevolveComidaMapaFantasma (tFantasma* fantasma, tMapa* mapa) {
+
     if (fantasma->ocupouComida) {
-        AtualizaItemMapa(mapa, posicaoAtualFantasma, '*');
+        AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasma), COMIDA);
         fantasma->ocupouComida = false;
     }
     else {
-        AtualizaItemMapa(mapa, posicaoAtualFantasma, ' ');
+        AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasma), ' ');
     }
-
-    /* Verifica se o Fantasma (apos Movimentar) ocupou Posicao de Comida*/
-    if (EncontrouComidaMapa(mapa, posicaoNova)) {
-        fantasma->ocupouComida = true;
-    }
-
-    /* Atualiza Posicao do Fantasma e Mapa*/
-    AtualizaPosicao(ObtemPosicaoFantasma(fantasma), posicaoNova);
-    AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasma), ObtemCaractereSkin(ObtemSkinFantasma(fantasma)));
-
-    /* Desaloca posicoes auxiliares */
-    DesalocaPosicao(posicaoAtualFantasma);
-    DesalocaPosicao(posicaoNova);
 
 }
 

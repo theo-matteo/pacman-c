@@ -74,6 +74,14 @@ skinFantasma ObtemSkinFantasma (tFantasma* fantasma);
 void MoveFantasma (tFantasma* fantasma, tMapa* mapa);
 
 /**
+ *  @brief Devolve comida ao mapa, caso Fantasma tenha ocupado anteriormente
+ *  Se o fantasma nao ocupou comida, devolve espaco em branco
+ *  @param fantasma fantasma
+ *  @param mapa mapa do jogo
+*/
+void DevolveComidaMapaFantasma (tFantasma* fantasma, tMapa* mapa);
+
+/**
  *  @brief Obtem a posicao do fantasma
  *  @param fantasma fantasma
  *  @return Retorna a posicao do Fantasma

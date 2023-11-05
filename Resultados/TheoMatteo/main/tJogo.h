@@ -65,11 +65,11 @@ void MovimentaPacmanMapa (tPacman* pacman, tMapa* mapa, COMANDO comando);
 void VerificaColisao (COMANDO comando, tFantasma** fantasmas, tMapa* mapa, tPacman* pacman);
 
 /** 
- * @brief Atualiza a skin do fantasma no mapa, se na posicao dele estiver uma comida.
+ * @brief Atualiza a skin do fantasma no mapa, se na posicao dele estiver uma comida (se ele ocupou)
  * @param fantasmas Fantasmas do Jogo
  * @param mapa Mapa do Jogo
  */
-void AtualizaSkinFantasma (tFantasma** fantasmas, tMapa* mapa);
+void AtualizaFantasmaMapa (tFantasma** fantasmas, tMapa* mapa);
 
 /**
  * @brief Verifica se o fantasmas esta ocupando posicao de comida

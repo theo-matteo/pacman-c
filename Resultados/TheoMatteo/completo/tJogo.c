@@ -51,21 +51,20 @@ void ExecutaJogo (tJogo* jogo) {
 
     while (!AcabouJogo(jogo)) {
 
-        /* Obtem Comando do Jogador */
         COMANDO comando = LeComandoTeclado();
 
         MovimentaFantasmas(fantasmas, mapa);
 
         MovimentaPacmanMapa(pacman, mapa, comando);
 
-        /* Caso o Fantasma tenha ocupado Comida, devolve sua skin ao mapa */
-        AtualizaSkinFantasma(fantasmas, mapa);
+        VerificaColisao(comando, fantasmas, mapa, pacman);
+
+        /* Caso o Fantasma tenha ocupado comida, devolve sua skin ao mapa */
+        AtualizaFantasmaMapa(fantasmas, mapa);
 
         if (PacmanPegouComida(pacman)) {
             AtualizaComidasObtidas(jogo);
         }
-
-        VerificaColisao(comando, fantasmas, mapa, pacman);
 
         /* Atualizacao do Arquivo de Saida */
         PreencheArquivoSaida(arquivoSaida, jogo, comando);
@@ -73,6 +72,7 @@ void ExecutaJogo (tJogo* jogo) {
 
 
     /* Salva Arquivos */
+    
     GeraArquivoResumo(pacman);
     SalvaTrilhaPacman(pacman);
     FinalizaArquivoSaida(arquivoSaida, jogo);
@@ -108,13 +108,7 @@ void MovimentaFantasmas (tFantasma** fantasmas, tMapa* mapa) {
     for (int i = 0; i < NUM_FANTASMAS; i++) {
 
         if (fantasmas[i] != NULL) {
-
             MoveFantasma(fantasmas[i], mapa);
-
-            /* Atualiza o fantasma para comida temporariamente */
-            if (fantasmaOcupandoComida(fantasmas[i])) {
-                AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), COMIDA);
-            }
         }   
     }
 }
@@ -140,11 +134,12 @@ void MovimentaPacmanMapa (tPacman* pacman, tMapa* mapa, COMANDO comando) {
     DesalocaPosicao(posAtualPac);
 }
 
-void AtualizaSkinFantasma (tFantasma** fantasmas, tMapa* mapa) {
+void AtualizaFantasmaMapa (tFantasma** fantasmas, tMapa* mapa) {
     for (int i = 0; i < NUM_FANTASMAS; i++) {
         if (fantasmas[i] != NULL) {
-            if (ObtemItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i])) == COMIDA) {
-                AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), ObtemCaractereSkin(ObtemSkinFantasma(fantasmas[i])));
+            char skin = ObtemCaractereSkin(ObtemSkinFantasma(fantasmas[i]));
+            if (ObtemItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i])) != skin) {
+                AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), skin);
             }
         }
     }
