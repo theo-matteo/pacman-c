@@ -86,9 +86,6 @@ void MoveFantasma (tFantasma* fantasma, tMapa* mapa) {
     if (EncontrouComidaMapa(mapa, ObtemPosicaoFantasma(fantasma))) {
         fantasma->ocupouComida = true;
     }
-    else {
-        AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasma), ObtemCaractereSkin(ObtemSkinFantasma(fantasma)));
-    }
 
     /* Desaloca Posicao Auxiliar */
     DesalocaPosicao(posicaoNova);

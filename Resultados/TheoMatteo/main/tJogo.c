@@ -53,26 +53,29 @@ void ExecutaJogo (tJogo* jogo) {
 
         COMANDO comando = LeComandoTeclado();
 
+        /* Clona posicao atual do pacman (antes da movimentacao) */
+        tPosicao* posAtPac = ClonaPosicao(ObtemPosicaoPacman(pacman));
+
         MovimentaFantasmas(fantasmas, mapa);
 
         MovimentaPacmanMapa(pacman, mapa, comando);
 
-        VerificaColisao(comando, fantasmas, mapa, pacman);
+        VerificaColisao(comando, fantasmas, mapa, pacman, posAtPac);
 
-        /* Caso o Fantasma tenha ocupado comida, devolve sua skin ao mapa */
         AtualizaFantasmaMapa(fantasmas, mapa);
 
         if (PacmanPegouComida(pacman)) {
             AtualizaComidasObtidas(jogo);
         }
 
-        /* Atualizacao do Arquivo de Saida */
+        /* Atualizacao do arquivo de saida */
         PreencheArquivoSaida(arquivoSaida, jogo, comando);
+
+        DesalocaPosicao(posAtPac);
     }
 
 
     /* Salva Arquivos */
-    
     GeraArquivoResumo(pacman);
     SalvaTrilhaPacman(pacman);
     FinalizaArquivoSaida(arquivoSaida, jogo);
@@ -104,9 +107,7 @@ COMANDO LeComandoTeclado() {
 }
 
 void MovimentaFantasmas (tFantasma** fantasmas, tMapa* mapa) {
-
     for (int i = 0; i < NUM_FANTASMAS; i++) {
-
         if (fantasmas[i] != NULL) {
             MoveFantasma(fantasmas[i], mapa);
         }   
@@ -129,7 +130,6 @@ void MovimentaPacmanMapa (tPacman* pacman, tMapa* mapa, COMANDO comando) {
         }
     }
 
-    /* Atualiza pacman no mapa */
     AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), PACMAN);
     DesalocaPosicao(posAtualPac);
 }
@@ -138,9 +138,7 @@ void AtualizaFantasmaMapa (tFantasma** fantasmas, tMapa* mapa) {
     for (int i = 0; i < NUM_FANTASMAS; i++) {
         if (fantasmas[i] != NULL) {
             char skin = ObtemCaractereSkin(ObtemSkinFantasma(fantasmas[i]));
-            if (ObtemItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i])) != skin) {
-                AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), skin);
-            }
+            AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), skin);
         }
     }
 }
@@ -170,7 +168,7 @@ void AtualizaComidasObtidas (tJogo* jogo) {
     jogo->numeroComidasObtidas++;
 }
 
-void VerificaColisao (COMANDO comando, tFantasma** fantasmas, tMapa* mapa, tPacman* pacman) {
+void VerificaColisao (COMANDO comando, tFantasma** fantasmas, tMapa* mapa, tPacman* pacman, tPosicao* posAntPac) {
 
     for (int i = 0; i < NUM_FANTASMAS; i++) {
 
@@ -178,24 +176,11 @@ void VerificaColisao (COMANDO comando, tFantasma** fantasmas, tMapa* mapa, tPacm
             continue;
         }
 
-        /* Obtem caractere da skin do fantasma */
-        char skin = ObtemCaractereSkin(ObtemSkinFantasma(fantasmas[i]));
-
-        /* Verifica se as posicoes do pacman e do fantasma sao iguais */
         if (SaoIguaisPosicao(ObtemPosicaoFantasma(fantasmas[i]), ObtemPosicaoPacman(pacman))) {
-            AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), skin);
             MataPacmanJogo(mapa, pacman, comando);
         }
-
-    
-        else if (ObtemItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i])) == ' ') {
-            
-            /* Atualiza fantasma no mapa se o pacman removeu sua skin acidentalmente */
-            AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasmas[i]), skin);
-
-            /* Caso em que de colisao em que eles trocam de Posicao */
+        else if (SaoIguaisPosicao(ObtemPosicaoFantasma(fantasmas[i]), posAntPac)) {
             if (PosicoesDivergiram(comando, ObtemSentidoFantasma(fantasmas[i]))) {
-                AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), ' ');
                 MataPacmanJogo(mapa, pacman, comando);
             }
         }
@@ -276,6 +261,10 @@ bool PosicoesDivergiram (COMANDO comando, sentidoMovimento sentido) {
 }
 
 void MataPacmanJogo (tMapa* mapa, tPacman* pacman, COMANDO comando) {
+
+    /* Remove o pacman do mapa */
+    AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), ' ');
+
     InsereNovoMovimentoSignificativoPacman(pacman, comando, "fim de jogo por encostar em um fantasma");
     MataPacman(pacman);
 }

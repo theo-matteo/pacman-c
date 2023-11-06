@@ -1,15 +1,15 @@
-==296086== Memcheck, a memory error detector
-==296086== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==296086== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==296086== Command: Resultados/TheoMatteo/tMovimento/prog Resultados/TheoMatteo/tMovimento/Casos/20
-==296086== Parent PID: 296085
-==296086== 
-==296086== 
-==296086== HEAP SUMMARY:
-==296086==     in use at exit: 0 bytes in 0 blocks
-==296086==   total heap usage: 42,509 allocs, 42,509 frees, 405,681 bytes allocated
-==296086== 
-==296086== All heap blocks were freed -- no leaks are possible
-==296086== 
-==296086== For lists of detected and suppressed errors, rerun with: -s
-==296086== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==173818== Memcheck, a memory error detector
+==173818== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==173818== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==173818== Command: Resultados/TheoMatteo/tMovimento/prog Resultados/TheoMatteo/tMovimento/Casos/20
+==173818== Parent PID: 173817
+==173818== 
+==173818== 
+==173818== HEAP SUMMARY:
+==173818==     in use at exit: 0 bytes in 0 blocks
+==173818==   total heap usage: 42,509 allocs, 42,509 frees, 405,681 bytes allocated
+==173818== 
+==173818== All heap blocks were freed -- no leaks are possible
+==173818== 
+==173818== For lists of detected and suppressed errors, rerun with: -s
+==173818== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
