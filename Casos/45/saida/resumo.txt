@@ -1,0 +1,15 @@
+Movimento 2 (d) pegou comida
+Movimento 3 (d) pegou comida
+Movimento 4 (d) pegou comida
+Movimento 5 (d) pegou comida
+Movimento 7 (d) pegou comida
+Movimento 8 (d) pegou comida
+Movimento 9 (d) pegou comida
+Movimento 10 (d) pegou comida
+Movimento 11 (d) pegou comida
+Movimento 12 (d) pegou comida
+Movimento 15 (w) pegou comida
+Movimento 16 (w) pegou comida
+Movimento 17 (w) pegou comida
+Movimento 18 (w) pegou comida
+Movimento 18 (w) fim de jogo por encostar em um fantasma

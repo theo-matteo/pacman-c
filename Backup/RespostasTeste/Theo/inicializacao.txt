@@ -1,4 +1,0 @@
-######
-# >*B#
-#    #
-Pac-Man comecara o jogo na linha 2 e coluna 3

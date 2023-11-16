@@ -1,0 +1,65 @@
+Movimento 1 (s) pegou comida
+Movimento 2 (d) pegou comida
+Movimento 4 (a) pegou comida
+Movimento 5 (a) colidiu com a parede
+Movimento 8 (w) pegou comida
+Movimento 9 (w) pegou comida
+Movimento 10 (w) pegou comida
+Movimento 11 (w) pegou comida
+Movimento 12 (w) pegou comida
+Movimento 13 (d) pegou comida
+Movimento 14 (w) pegou comida
+Movimento 16 (s) pegou comida
+Movimento 17 (s) pegou comida
+Movimento 18 (s) pegou comida
+Movimento 19 (s) pegou comida
+Movimento 20 (d) pegou comida
+Movimento 21 (w) pegou comida
+Movimento 22 (w) pegou comida
+Movimento 25 (d) pegou comida
+Movimento 26 (w) pegou comida
+Movimento 30 (a) pegou comida
+Movimento 32 (s) pegou comida
+Movimento 35 (w) colidiu com a parede
+Movimento 37 (w) pegou comida
+Movimento 38 (w) pegou comida
+Movimento 39 (a) pegou comida
+Movimento 44 (s) pegou comida
+Movimento 51 (a) pegou comida
+Movimento 52 (s) pegou comida
+Movimento 54 (w) pegou comida
+Movimento 55 (a) pegou comida
+Movimento 56 (w) pegou comida
+Movimento 58 (a) pegou comida
+Movimento 60 (d) pegou comida
+Movimento 62 (w) colidiu com a parede
+Movimento 64 (a) colidiu com a parede
+Movimento 74 (w) pegou comida
+Movimento 75 (a) pegou comida
+Movimento 78 (w) pegou comida
+Movimento 79 (d) pegou comida
+Movimento 80 (d) pegou comida
+Movimento 81 (d) pegou comida
+Movimento 82 (d) pegou comida
+Movimento 83 (d) pegou comida
+Movimento 84 (s) pegou comida
+Movimento 85 (a) pegou comida
+Movimento 86 (a) pegou comida
+Movimento 87 (a) pegou comida
+Movimento 91 (a) pegou comida
+Movimento 93 (a) pegou comida
+Movimento 94 (a) pegou comida
+Movimento 95 (a) pegou comida
+Movimento 96 (a) pegou comida
+Movimento 103 (d) pegou comida
+Movimento 104 (d) pegou comida
+Movimento 105 (d) pegou comida
+Movimento 113 (d) pegou comida
+Movimento 114 (w) pegou comida
+Movimento 115 (d) pegou comida
+Movimento 116 (s) pegou comida
+Movimento 117 (d) pegou comida
+Movimento 122 (s) pegou comida
+Movimento 131 (w) pegou comida
+Movimento 139 (s) colidiu com a parede
+Movimento 146 (s) pegou comida

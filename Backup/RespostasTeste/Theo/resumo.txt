@@ -1,2 +1,0 @@
-Movimento 1 (w) colidiu com a parede
-Movimento 2 (d) fim de jogo por encostar em um fantasma

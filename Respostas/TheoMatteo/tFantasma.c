@@ -1,5 +1,6 @@
 #include "tFantasma.h"
 #define COMIDA '*'
+#define PORTAL '@'
 
 
 tFantasma* CriaFantasma (tMapa* mapa, skinFantasma skin) {
@@ -20,6 +21,7 @@ tFantasma* CriaFantasma (tMapa* mapa, skinFantasma skin) {
     fantasma->sentido = ObtemSentidoInicialFantasma(skin);
     fantasma->skin = skin;
     fantasma->ocupouComida = false;
+    fantasma->ocupouPortal = false;
 
     return fantasma;
 }
@@ -67,13 +69,13 @@ void MoveFantasma (tFantasma* fantasma, tMapa* mapa) {
     }
 
     /* Verifica se o fantasma ocupou anteriormente posicao de comida e devolve ao mapa */
-    DevolveComidaMapaFantasma(fantasma, mapa);
+    DevolveItemMapaFantasma(fantasma, mapa);
 
     /* Posicao pos Movimento */
     tPosicao *posicaoNova = PosicaoPosMovimentoFantasma(fantasma);
 
     /* Altera Sentido do Fantasma se Colidir com uma Parede*/
-    if (EncontrouParedeMapa(mapa, posicaoNova) || (PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, posicaoNova))) {
+    if (EncontrouParedeMapa(mapa, posicaoNova)) {
         AlteraSentidoFantasma(fantasma);
         DesalocaPosicao(posicaoNova);
         posicaoNova = PosicaoPosMovimentoFantasma(fantasma);
@@ -86,16 +88,23 @@ void MoveFantasma (tFantasma* fantasma, tMapa* mapa) {
     if (EncontrouComidaMapa(mapa, ObtemPosicaoFantasma(fantasma))) {
         fantasma->ocupouComida = true;
     }
+    else if (PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, posicaoNova)) {
+        fantasma->ocupouPortal = true;
+    }
 
     /* Desaloca Posicao Auxiliar */
     DesalocaPosicao(posicaoNova);
 }
 
-void DevolveComidaMapaFantasma (tFantasma* fantasma, tMapa* mapa) {
+void DevolveItemMapaFantasma (tFantasma* fantasma, tMapa* mapa) {
 
     if (fantasma->ocupouComida) {
         AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasma), COMIDA);
         fantasma->ocupouComida = false;
+    }
+    else if (fantasma->ocupouPortal) {
+        AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasma), PORTAL);
+        fantasma->ocupouPortal = false;
     }
     else {
         AtualizaItemMapa(mapa, ObtemPosicaoFantasma(fantasma), ' ');

@@ -17,7 +17,7 @@ typedef enum {
     B = 0, 
     P = 1, 
     I = 2, 
-    C = 3
+    C = 3,
 } skinFantasma;
 
 
@@ -33,6 +33,7 @@ typedef struct tFantasma {
     sentidoMovimento sentido;
 
     bool ocupouComida;
+    bool ocupouPortal;
 
 } tFantasma;
 
@@ -74,12 +75,11 @@ skinFantasma ObtemSkinFantasma (tFantasma* fantasma);
 void MoveFantasma (tFantasma* fantasma, tMapa* mapa);
 
 /**
- *  @brief Devolve comida ao mapa, caso Fantasma tenha ocupado anteriormente
- *  Se o fantasma nao ocupou comida, devolve espaco em branco
+ *  @brief Devolve item que o fantasma ocupou
  *  @param fantasma fantasma
  *  @param mapa mapa do jogo
 */
-void DevolveComidaMapaFantasma (tFantasma* fantasma, tMapa* mapa);
+void DevolveItemMapaFantasma (tFantasma* fantasma, tMapa* mapa);
 
 /**
  *  @brief Obtem a posicao do fantasma

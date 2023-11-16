@@ -1,0 +1,75 @@
+Movimento 3 (s) pegou comida
+Movimento 4 (a) pegou comida
+Movimento 5 (a) pegou comida
+Movimento 6 (a) pegou comida
+Movimento 7 (a) pegou comida
+Movimento 8 (a) pegou comida
+Movimento 9 (a) pegou comida
+Movimento 10 (a) pegou comida
+Movimento 11 (a) pegou comida
+Movimento 12 (a) pegou comida
+Movimento 13 (a) pegou comida
+Movimento 14 (a) pegou comida
+Movimento 26 (d) pegou comida
+Movimento 27 (d) pegou comida
+Movimento 28 (d) pegou comida
+Movimento 29 (d) pegou comida
+Movimento 30 (d) pegou comida
+Movimento 31 (d) pegou comida
+Movimento 32 (d) pegou comida
+Movimento 33 (d) pegou comida
+Movimento 34 (d) pegou comida
+Movimento 35 (d) pegou comida
+Movimento 36 (d) pegou comida
+Movimento 37 (w) pegou comida
+Movimento 38 (a) pegou comida
+Movimento 39 (a) pegou comida
+Movimento 40 (a) pegou comida
+Movimento 44 (w) pegou comida
+Movimento 45 (w) pegou comida
+Movimento 46 (a) pegou comida
+Movimento 47 (a) pegou comida
+Movimento 48 (s) pegou comida
+Movimento 49 (d) pegou comida
+Movimento 60 (w) pegou comida
+Movimento 61 (w) pegou comida
+Movimento 64 (a) pegou comida
+Movimento 65 (w) pegou comida
+Movimento 66 (w) pegou comida
+Movimento 67 (w) colidiu com a parede
+Movimento 70 (a) colidiu com a parede
+Movimento 78 (w) pegou comida
+Movimento 79 (w) pegou comida
+Movimento 80 (w) pegou comida
+Movimento 83 (a) pegou comida
+Movimento 84 (a) pegou comida
+Movimento 88 (s) pegou comida
+Movimento 100 (d) pegou comida
+Movimento 101 (d) pegou comida
+Movimento 102 (s) pegou comida
+Movimento 103 (a) pegou comida
+Movimento 105 (w) pegou comida
+Movimento 106 (d) pegou comida
+Movimento 107 (d) pegou comida
+Movimento 108 (d) pegou comida
+Movimento 109 (d) pegou comida
+Movimento 113 (s) pegou comida
+Movimento 119 (w) colidiu com a parede
+Movimento 123 (s) colidiu com a parede
+Movimento 124 (s) colidiu com a parede
+Movimento 131 (d) colidiu com a parede
+Movimento 143 (w) colidiu com a parede
+Movimento 144 (w) colidiu com a parede
+Movimento 150 (w) pegou comida
+Movimento 152 (w) pegou comida
+Movimento 153 (w) pegou comida
+Movimento 154 (a) pegou comida
+Movimento 156 (a) pegou comida
+Movimento 157 (a) pegou comida
+Movimento 158 (a) pegou comida
+Movimento 164 (w) colidiu com a parede
+Movimento 167 (s) pegou comida
+Movimento 168 (a) pegou comida
+Movimento 191 (d) pegou comida
+Movimento 193 (d) pegou comida
+Movimento 193 (d) fim de jogo por encostar em um fantasma
